@@ -19,6 +19,37 @@ ul {
     padding: 0;
 }
 
+#menu {
+    width: 250px;
+    height: auto;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+    padding: 15px 15px;
+    position: absolute;
+    top: 184px;
+    z-index: 2;
+}
+
+.menu-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.menu-inner:first-child {
+    margin-top: 0;
+}
+.menu-inner:last-child {
+    margin-bottom: 0;
+}
+#menu .menu-content a {
+    color: #000;
+    font-family: Titillium Web;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
 .header-main {
     border-bottom: 1px solid #2270AD;
 }
@@ -104,6 +135,17 @@ ul {
 
 .react-tabs__tab:focus:after {
     display: none;
+}
+
+.react-multi-carousel-dot button {
+    width: 5px !important;
+    height: 5px !important;
+    background: #BBBEC0 !important;
+    border: 0 !important;
+}
+
+.react-multi-carousel-dot button:hover {
+    background: #1B85D7 !important;
 }
 
 label {
@@ -461,6 +503,7 @@ input {
     width: 225px;
     height: auto;
     align-items: center;
+    position: relative;
     padding: 22px;
 }
 
@@ -813,11 +856,11 @@ input[type=radio]:focus {
 }
 
 .categories .kVtMtA {
-    left: -30px;
+    left: -33px;
 }
 
 .categories .bhRnqO {
-    right: -30px;
+    right: -40px;
 }
 
 .categories .kVtMtA {
@@ -831,7 +874,7 @@ input[type=radio]:focus {
 .category-button {
     border-radius: 10px;
     background: #0370C4;
-    box-shadow: 0px 4px 22px -3px #4AB6FF;
+    box-shadow: 0px 4px 5px -3px #4AB6FF;
     border: none;
     color: #FFF;
     font-family: Titillium Web;
@@ -897,6 +940,11 @@ input[type=radio]:focus {
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    flex-direction: column;
+}
+
+.react-multi-carousel-list {
+    width: 100% !important;
 }
 
 .trending-brands .kVtMtA {
@@ -1001,6 +1049,10 @@ input[type=radio]:focus {
     padding: 0px 20px;
 }
 
+.react-multiple-carousel__arrow {
+    display: none;
+}
+
 .trending-products-inner a img {
     object-fit: contain;
     width: 200px;
@@ -1024,6 +1076,10 @@ input[type=radio]:focus {
 /* Trending product : end */
 
 /* Footer */
+footer {
+    padding-top: 15px;
+}
+
 .footer-div {
     background-color: #304F67;
 }
@@ -1169,7 +1225,7 @@ footer {
 }
 
 .tending-offer-contents h4 {
-    margin-top: 50px;
+    margin-top: 0px;
     color: #FFF;
     font-family: Montserrat;
     font-size: 16px;
@@ -1201,12 +1257,11 @@ footer {
 }
 
 .trending-offers {
-
     border-radius: 12px;
     overflow: hidden;
     position: relative;
     z-index: 1;
-    margin: 10px;
+    margin: 0px 25px 0 0;
 }
 
 .trending-offers:after {
@@ -1232,7 +1287,7 @@ footer {
 }
 
 .tending-offer-contents {
-    padding: 16px 20px;
+    padding: 22px 25px;
     position: relative;
     z-index: 1;
 
@@ -2095,7 +2150,6 @@ footer {
 .active {
     width: 25%;
     height: auto;
-    background: #1B6298;
     position: relative;
     z-index: 1;
 }
@@ -2108,46 +2162,71 @@ footer {
     z-index: 1;
 }
 
-.active.arrow::after {
+.advantage.progressbar {
+    z-index: 2;
+}
+
+.advantage.progressbar:first-child {
+    z-index: 3;
+}
+
+.active.progressbar::after {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url('../images/angleright.svg');
-    background-size: contain;
-    background-position: right;
+    background-image: url('../images/angleright.svg'),
+        url('../images/angleright-fill.svg');
+    background-size: contain, cover;
+    background-position: right center, right center;
     background-repeat: no-repeat;
     right: 0;
     top: 0;
     z-index: -1;
 }
 
-.advantage.arrow::after {
+.advantage.progressbar::after {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url('../images/angleright.svg');
+    background-image: url('../images/angleright-fill-inactive.svg');
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
-    right: 0;
+    right: -10%;
     top: 0;
     z-index: -1;
 }
 
-.active.arrow::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: url('../images/angleright-fill.svg');
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    right: 0;
-    top: 0;
-    z-index: -1;
+.progressbar:last-child::after {
+    background: transparent;
+}
+
+.inner-h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 46px 10px 26px;
+}
+
+.active.progressbar .inner-h4 h4 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.advantage .inner-h4 h4 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .delivery-address {
@@ -2158,7 +2237,6 @@ footer {
 .shipping-address {
     width: 50%;
     padding: 10px 30px 0 0;
-
 }
 
 .billing-address {
@@ -2314,4 +2392,510 @@ footer {
     margin: 10px 20px 35px
 }
 
-/* Shipping address : End */
+.cardtype {
+    width: 50%;
+    padding: 10px 30px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.cardtype h2 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.shipping-address .name select {
+    display: block;
+    width: 85%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 20px 0;
+    outline: 0;
+    color: #aaa;
+}
+
+.shipping-address .name select option {
+    color: #111;
+}
+
+/* shippingaddress : end */
+
+
+/* payment method */
+.expiry-dates {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.expiry-date {
+    width: 50%;
+}
+
+.checkbox label {
+    padding-left: 0;
+    color: #767272;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.checkbox {
+    margin-left: 20px;
+}
+
+.payment-form {
+    display: flex;
+    width: 100%;
+}
+
+.payment-form form {
+    width: 50%;
+}
+
+.payment-method h2 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.payment-method .name {
+    display: flex;
+    width: 100%;
+}
+
+.payment-method .first-name {
+    width: 50%;
+}
+
+.payment-method .last-name {
+    width: 50%;
+}
+
+.payment-method .name input {
+    display: block;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 20px 0;
+    outline: 0;
+}
+
+.payment-method .name label {
+    color: #767272;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.payment-method .name select {
+    display: block;
+    width: 85%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 20px 0;
+    outline: 0;
+    color: #aaa;
+}
+
+.payment-method .name select option {
+    color: #111;
+}
+
+.billing-information {
+    width: 50%;
+}
+
+.cardtypes {
+    display: flex;
+    align-items: center;
+}
+
+.card-1 {
+    margin: 0 10px 0 0;
+}
+
+.atmcards {
+    margin-top: -50px;
+}
+
+.shippingaddress {
+    width: 50%;
+    padding: 10px 30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.shippingaddress::after {
+    position: absolute;
+    content: "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _";
+    left: 3px;
+    bottom: 0;
+    color: #E7E8EA;
+}
+
+.your-information {
+    width: 50%;
+    padding: 10px 30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.your-information::after {
+    position: absolute;
+    content: "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _";
+    left: 3px;
+    bottom: 0;
+    color: #E7E8EA;
+}
+
+.your-information .name select {
+    display: block;
+    width: 85%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 20px 0;
+    outline: 0;
+    color: #aaa;
+}
+
+.your-information .name select option {
+    color: #111;
+}
+
+.your-information h2 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.shippingaddress h2 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.your-information button {
+    color: #0F8EEF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    background: transparent;
+    padding: 10px 30px 0 0;
+
+}
+
+.shippingaddress button {
+    color: #0F8EEF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    background: transparent;
+    padding: 10px 30px 0 0;
+
+}
+
+.delivery-address-body {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.delivery-address-name {
+    width: 50%;
+}
+
+.delivery-address-name h3 {
+    text-transform: capitalize;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.delivery-address-name h4 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.delivery-address-name.address h3 {
+    color: #504F4F;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.delivery-address-name img {
+    width: 60px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.place-order {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.place-order button {
+    background: #0F8EEF;
+    border: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 20px 25px;
+    margin: 10px 20px 35px
+}
+
+.place-order p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.place-order p span {
+    color: #000;
+    font-family: Titillium Web;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5px;
+}
+
+/* payment method : End */
+
+/* Edit profile */
+
+.edit-profile-main {
+    margin: 30px 0;
+}
+
+.edit-profile-h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 10px 46px 0px 0px;
+}
+
+.edit-profile-h4 h4 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.editprofile-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 296px;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    margin-top: 0;
+    padding: 10px 15px;
+}
+
+.editprofile-inner .user-info p {
+    color: #000;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 5px;
+}
+
+.editprofile-inner .user-icon {
+    position: relative;
+}
+
+.editprofile-inner .user-icon:after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 65px;
+    background: #1B85D7;
+    top: -9px;
+    left: -15px;
+}
+
+.editprofile-inner .user-info {
+    margin-left: -35px;
+}
+
+.edit-menubar {
+    background: #F3F3F3;
+    width: 296px;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #E7E8EA;
+    margin-top: 0;
+    padding: 25px 20px;
+    height: 555px;
+}
+
+.edit-menubar-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.menu-name {
+    margin-left: 22px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.edit-profile-right-content {
+    border-radius: 10px;
+    border: 1px solid #ECECEC;
+    background: #FFF;
+    width: 497px;
+    height: auto;
+    padding: 20px 25px;
+}
+
+.edit-profile-right-content .first-name input {
+    display: block;
+    width: 100%;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    /* padding: 0px 10px; */
+    margin: 5px 0 20px 0;
+    outline: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.edit-profile-right-content .first-name label {
+    color: rgba(0, 0, 0, 0.80);
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.edit-profile-right-content .first-name select {
+    display: block;
+    width: 100%;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px 25px 0;
+    margin: 5px 0 30px 0;
+    outline: 0;
+    color: #aaa;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.edit-profile-right-content .first-name button {
+    width: 100%;
+    display: block;
+    background: #1B85D7;
+    border: none;
+    height: 50px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 30px 0 30px 0;
+    margin: auto;
+}
+
+.edit-profile-right h3 {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.date-of-birth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.date-of-birth {
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* Edit profile : End */

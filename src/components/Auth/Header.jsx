@@ -10,9 +10,10 @@ import cart from '../../Asset/images/cart.svg'
 import likes from '../../Asset/images/likes.svg'
 import loginimg from '../../Asset/images/login-img.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faLocationDot, faClock } from '@fortawesome/free-solid-svg-icons'
+import { faPhone, faLocationDot, faClock, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
+import { useState } from 'react';
 
 const style = {
   position: 'absolute',
@@ -31,6 +32,7 @@ function Header() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [toggle, setToggle] = useState(false)
 
   return (
     <div>
@@ -166,7 +168,7 @@ function Header() {
             <div className="navbar-main">
               <div className="nav-section-1">
                 <span className='menu-toggle'>ALL CATEGORIES </span>
-                <div class="hamburger">
+                <div class="hamburger" onClick={() => setToggle(!toggle)} >
                   <input type="checkbox" class="hamburger-init" />
                   <div class="menu">
                     <div class="bar1"></div>
@@ -174,16 +176,59 @@ function Header() {
                     <div class="bar3"></div>
                   </div>
                 </div>
-                {/* <div className="menu-list">
-                  <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>2</li>
-                    <li>2</li>
-                  </ul>
-                </div> */}
               </div>
+              {toggle && (<ul id="menu">
+                <div className="menu-inner">
+                  <div className="menu-content">
+                   <a href="">FOOD CUPBOARD</a> 
+                  </div>
+                  <div className="menu-icon">
+                    <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0"}} />
+                  </div>
+                </div>
+                <div className="menu-inner">
+                  <div className="menu-content">
+                  <a href="">HEALTH & BEAUTY</a>
+                  </div>
+                  <div className="menu-icon">
+                    <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0", }} />
+                  </div>
+                </div>
 
+                <div className="menu-inner">
+                  <div className="menu-content">
+                  <a href=""> HOUSEHOLD CARE</a>
+                  </div>
+                  <div className="menu-icon">
+                    <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0", }} />
+                  </div>
+                </div>
+                <div className="menu-inner">
+                  <div className="menu-content">
+                  <a href="">FRESH FOOD</a>
+                  </div>
+                  <div className="menu-icon">
+                    <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0", }} />
+                  </div>
+                </div>
+                <div className="menu-inner">
+                  <div className="menu-content">
+                  <a href="">BABY CARE</a>
+                  </div>
+                  <div className="menu-icon">
+                    <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0", }} />
+                  </div>
+                </div>
+
+                <div className="menu-inner">
+                  <div className="menu-content">
+                  <a href="">STATIONERY & OFFICE SUPPLIES</a>
+                  </div>
+                  <div className="menu-icon">
+                    <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0", }} />
+                  </div>
+                </div>
+              </ul>)}
               <div className="nav-section-2">
                 <div class="menu-sub">
                   <ul>

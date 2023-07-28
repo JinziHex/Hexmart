@@ -7,20 +7,24 @@ function Shippingaddress() {
         <div>
             <Header />
             <div className="shipping-address-main">
-                <div className="advantages-main">
+                <div className="progressbar-main">
                     <div className="wrapperr">
                         <div className="advantages-shipping">
-                            <div className="active arrow">
-                                <div className="inner-img">
-                                    {/* <h4>SHIPPING ADDRESS</h4> */}
+                            <div className="active progressbar">
+                                <div className="inner-h4">
+                                    <h4>SHIPPING ADDRESS</h4>
                                 </div>
                             </div>
-                            <div className="advantage arrow">
-                                <div className="inner-img">
+                            <div className="advantage progressbar">
+                                <div className="inner-h4">
+                                    <h4>PAYMENT</h4>
                                 </div>
                             </div>
-                            <div className="advantage"> <div className="inner-img">
-                            </div></div>
+                            <div className="advantage">
+                                <div className="inner-h4">
+                                    <h4>CONFIRMATION</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

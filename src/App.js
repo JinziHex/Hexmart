@@ -8,6 +8,9 @@ import Listing from './Pages/Auth/Listing';
 import Productdescription from './Pages/Auth/Productdescription';
 import Shoppingcart from './Pages/Auth/Shoppingcart';
 import Shippingaddress from './Pages/Auth/Shippingaddress';
+import Paymentmethod from './Pages/Auth/Paymentmethod';
+import Placeorder from './Pages/Auth/Placeorder';
+import Editprofile from './Pages/Auth/Editprofile';
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
             <Route path='/productdescription' element={<Productdescription />}></Route>
             <Route path='/shoppingcart' element={<Shoppingcart />}></Route>
             <Route path='/shippingaddress' element={<Shippingaddress />}></Route>
+            <Route path='/paymentmethod' element={<Paymentmethod />}></Route>
+            <Route path='/placeorder' element={<Placeorder />}></Route>
+            <Route path='/editprofile' element={<Editprofile />}></Route>
           </Routes>
         </div>
       </BrowserRouter>
