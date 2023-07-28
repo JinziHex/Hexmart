@@ -7,6 +7,7 @@ import Home from './Pages/Auth/Home';
 import Listing from './Pages/Auth/Listing';
 import Productdescription from './Pages/Auth/Productdescription';
 import Shoppingcart from './Pages/Auth/Shoppingcart';
+import Shippingaddress from './Pages/Auth/Shippingaddress';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path='/listing' element={<Listing />}></Route>
             <Route path='/productdescription' element={<Productdescription />}></Route>
             <Route path='/shoppingcart' element={<Shoppingcart />}></Route>
+            <Route path='/shippingaddress' element={<Shippingaddress />}></Route>
           </Routes>
         </div>
       </BrowserRouter>

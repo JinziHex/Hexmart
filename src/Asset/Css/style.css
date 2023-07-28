@@ -514,7 +514,7 @@ input {
 }
 
 .hamburger-init:checked+.menu .bar1 {
-    transform: translateY(5px) rotate(45deg);
+    transform: translateY(4.5px) rotate(45deg);
 }
 
 .hamburger-init:checked+.menu .bar2 {
@@ -522,7 +522,7 @@ input {
 }
 
 .hamburger-init:checked+.menu .bar3 {
-    transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-6.5px) rotate(-45deg);
 }
 
 input[type=file]:focus,
@@ -1884,11 +1884,13 @@ footer {
 }
 
 .cart-items {
-    width: 70%;
+    width: 80%;
 }
 
 .order-price {
-    width: 30%;
+    width: 20%;
+    margin-left: 5px;
+
 }
 
 .shopping-cart-main {
@@ -1996,4 +1998,320 @@ footer {
     margin-right: 40px;
 }
 
+.price-details-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pricedetails {
+    border: 1px solid #F0F0F0;
+    padding: 15px 10px;
+}
+
+.content-price p {
+    color: #3C3939;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.price-details div {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.totalamount {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.placeorder {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: #0F8EEF;
+    width: 230px;
+    height: 66px;
+    border: none;
+    display: block;
+}
+
+.Shopping {
+    color: rgba(15, 142, 239, 0.63);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: rgba(99, 93, 93, 0.05);
+    border: none;
+    display: block;
+    width: 230px;
+    height: 66px;
+}
+
+.shopping-cartt {
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 1px solid #EAE6E6;
+    background: #FFF;
+    height: auto;
+    padding: 25px 10px;
+}
+
 /* Shoppingcart : end */
+
+/* Shipping address : start */
+
+.advantages-shipping {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding-top: 5px;
+    margin: 30px 0;
+}
+
+.active {
+    width: 25%;
+    height: auto;
+    background: #1B6298;
+    position: relative;
+    z-index: 1;
+}
+
+.advantage {
+    width: 25%;
+    height: auto;
+    background: #DADADA;
+    position: relative;
+    z-index: 1;
+}
+
+.active.arrow::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/angleright.svg');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.advantage.arrow::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/angleright.svg');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.active.arrow::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/angleright-fill.svg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.delivery-address {
+    display: flex;
+    width: 100%;
+}
+
+.shipping-address {
+    width: 50%;
+    padding: 10px 30px 0 0;
+
+}
+
+.billing-address {
+    width: 50%;
+    padding: 10px 0px 0 30px;
+
+}
+
+.shipping-address h2 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.billing-address h2 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.shipping-address .name {
+    display: flex;
+    width: 100%;
+}
+
+.shipping-address .first-name {
+    width: 50%;
+}
+
+.shipping-address .last-name {
+    width: 50%;
+}
+
+.shipping-address .name input {
+    display: block;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 20px 0;
+    outline: 0;
+}
+
+.shipping-address .name label {
+    color: #767272;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.address-1 input {
+    display: block;
+    width: 95%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 20px 0;
+    outline: 0;
+}
+
+.address-1 label {
+    color: #767272;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.address-2 input {
+    display: block;
+    width: 95%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 10px 0;
+    outline: 0;
+}
+
+.address-2 label {
+    color: #767272;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 5px;
+}
+
+.billing-address .name {
+    display: flex;
+    width: 100%;
+}
+
+.billing-address .first-name {
+    width: 50%;
+}
+
+.billing-address .last-name {
+    width: 50%;
+}
+
+.billing-address .name input {
+    display: block;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 20px 0;
+    outline: 0;
+}
+
+.billing-address .name label {
+    color: #767272;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.submit-button button {
+    background: #0F8EEF;
+    border: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 20px 25px;
+    margin: 10px 20px 35px
+}
+
+/* Shipping address : End */
