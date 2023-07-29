@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../../components/Auth/Header'
-import Footer from '../../components/Auth/Footer'
+import Header from '../../components/Auth/Header';
+import Footer from '../../components/Auth/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import usericon from '../../Asset/images/user-icon.svg'
@@ -8,14 +8,20 @@ import order from '../../Asset/images/order.svg'
 import orderwallet from '../../Asset/images/order-wallet.svg'
 import orderlocation from '../../Asset/images/order-location.svg'
 import logout from '../../Asset/images/logout.svg'
+import edit from '../../Asset/images/Edit.svg'
+import vector from '../../Asset/images/Vector.svg'
+import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
-import { useState } from 'react'
 
-function Editprofile() {
+function Deliveryaddress() {
     const [open, setOpen] = React.useState(false);
+    const [menu, setmenu] = useState(false)
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    const clickMenu = () => {
+        setmenu(!menu)
+    }
     const style = {
         position: 'absolute',
         top: '50%',
@@ -32,12 +38,14 @@ function Editprofile() {
     return (
         <div>
             <Header />
-            <div className="edit-profile-main">
+            <div className="delivery-address-main">
                 <div className="container">
                     <div className="listing-header">
                         <span><FontAwesomeIcon icon={faHouse} style={{ color: "#E2DFDF", }} /></span>
                         <span><FontAwesomeIcon icon={faAngleRight} style={{ color: "#E2DFDF", }} /></span>
                         <a href=''><span className='listing-categories'>My Account</span></a>
+                        <span><FontAwesomeIcon icon={faAngleRight} style={{ color: "#E2DFDF", }} /></span>
+                        <a href=''><span className='listing-categories'>Delivery Address</span></a>
                     </div>
                     <div className="edit-profile-h4">
                         <h4>My Account</h4>
@@ -45,7 +53,7 @@ function Editprofile() {
                     <div className="listing-body">
                         <div className="listing">
                             <div className="listening-content-left">
-                                <div className='editprofile-inner active'>
+                                <div className='editprofile-inner'>
                                     <div className="editprofile-heading">
                                         <div className="user-icon"><img src={usericon}></img></div>
                                     </div>
@@ -59,21 +67,20 @@ function Editprofile() {
                                     </div>
                                 </div>
                                 <div className="edit-menubar">
-                                    <div className="edit-menubar-1 editprofile">
+                                    <div className="editprofile">
                                         <div className="icon"><img src={order}></img></div>
                                         <div className="menu-name">My Order</div>
                                     </div>
 
-                                    <div className="edit-menubar-1 editprofile">
-                                        <div className="icon"><img src={orderlocation}></img></div>
-                                        <div className="menu-name">Delivery Address</div>
+                                    <div className="editprofile active">
+                                        <div className="icon user-icon"><img src={orderlocation}></img></div>
+                                        <div className="menu-name" style={{ textAlign: "left!important" }}>Delivery Address</div>
                                     </div>
 
-                                    <div className="edit-menubar-1 editprofile">
+                                    <div className="editprofile">
                                         <div className="icon"><img src={orderwallet}></img></div>
                                         <div className="menu-name">My Wallet</div>
                                     </div>
-
                                     <Modal
                                         open={open}
                                         onClose={handleClose}
@@ -98,38 +105,48 @@ function Editprofile() {
                                 </div>
                             </div>
                             <div className="edit-profile-right">
-                                <h3>Edit Profile Details</h3>
-                                <div className="edit-profile-right-content">
-                                    <div className="first-name">
-                                        <label>Full Name</label>
-                                        <input type='name' name='' value=''></input>
-                                    </div>
-                                    <div className="first-name">
-                                        <label>Mobile No</label>
-                                        <input type='name' name='' value=''></input>
-                                    </div>
-                                    <div className="first-name">
-                                        <label>Email</label>
-                                        <input type='name' name='' value=''></input>
-                                    </div>
-                                    <div className="first-name">
-                                        <select>
-                                            <option value="">Gender</option>
-                                            <option value="">January</option>
-                                            <option value="">February</option>
-                                            <option value="">March</option>
-                                        </select>
-                                    </div>
-                                    <div className="first-name">
-                                        <label>Date of Birth</label>
-                                        <div className="date-of-birth">
-                                            <input type='date' name='' value=''></input>
+                                <h3>Saved Addresses</h3>
+                                <div className="delivery-addresss">
+                                    <div className="delivery-address-name">
+                                        <div className="name">
+                                            Full Name
                                         </div>
+                                        <div className="button">
+                                            <button>HOME</button>
+                                        </div>
+                                        <div className="edit-button">
+                                            <i class="fa fa-ellipsis-v" aria-hidden="true" style={{ cursor: "pointer", position: "relative" }} onClick={clickMenu}></i>
+                                        </div>
+                                        {menu && <div className="edit-button-inner-contents">
+                                            <div className="button-inner-contents">
+                                                <div className="edit">
+                                                    <img src={edit}></img>
+                                                    <button className='edit'>edit</button>
+                                                </div>
+                                                <div className="delete">
+                                                    <img src={vector}></img>
+                                                    <button className='delete'>delete</button>
+                                                </div>
+                                            </div>
+                                        </div>}
+
                                     </div>
-                                    <div className="first-name">
-                                        <button>Save Changes</button>
+                                    <div className="delivery-page-address">
+                                        <p>Unit - 12, Upper Basement, Sahya Building,
+                                            KSITIL  Special Economic Zone,Govt. Cyberpark,
+                                            Nellikkode P.O,Kozhikode, Kerala, India </p>
+                                        <p>Phone:9100000000</p>
+                                        <p style={{
+                                            color: "#764646",
+                                            fontFamily: "Montserrat",
+                                            fontSize: "12px",
+                                            fontStyle: "normal",
+                                            fontWeight: "500",
+                                            lineHeight: "normal",
+                                        }}>Default Address</p>
                                     </div>
                                 </div>
+                                <button className='add-new-address'>Add New Address</button>
                             </div>
                         </div>
                     </div>
@@ -137,9 +154,8 @@ function Editprofile() {
                 </div>
             </div>
             <Footer />
-        </div>
+        </div >
     )
 }
-
-export default Editprofile
+export default Deliveryaddress
 

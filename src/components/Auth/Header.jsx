@@ -32,7 +32,11 @@ function Header() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
+
+  const toggleMenu = () => {
+    setToggle(!toggle)
+  }
 
   return (
     <div>
@@ -168,7 +172,7 @@ function Header() {
             <div className="navbar-main">
               <div className="nav-section-1">
                 <span className='menu-toggle'>ALL CATEGORIES </span>
-                <div class="hamburger" onClick={() => setToggle(!toggle)} >
+                <div class="hamburger" onClick={toggleMenu} >
                   <input type="checkbox" class="hamburger-init" />
                   <div class="menu">
                     <div class="bar1"></div>
@@ -180,40 +184,15 @@ function Header() {
               {toggle && (<ul id="menu">
                 <div className="menu-inner">
                   <div className="menu-content">
-                   <a href="">FOOD CUPBOARD</a> 
+                    <a href="">FOOD CUPBOARD</a>
                   </div>
                   <div className="menu-icon">
-                    <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0"}} />
+                    <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0" }} />
                   </div>
                 </div>
                 <div className="menu-inner">
                   <div className="menu-content">
-                  <a href="">HEALTH & BEAUTY</a>
-                  </div>
-                  <div className="menu-icon">
-                    <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0", }} />
-                  </div>
-                </div>
-
-                <div className="menu-inner">
-                  <div className="menu-content">
-                  <a href=""> HOUSEHOLD CARE</a>
-                  </div>
-                  <div className="menu-icon">
-                    <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0", }} />
-                  </div>
-                </div>
-                <div className="menu-inner">
-                  <div className="menu-content">
-                  <a href="">FRESH FOOD</a>
-                  </div>
-                  <div className="menu-icon">
-                    <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0", }} />
-                  </div>
-                </div>
-                <div className="menu-inner">
-                  <div className="menu-content">
-                  <a href="">BABY CARE</a>
+                    <a href="">HEALTH & BEAUTY</a>
                   </div>
                   <div className="menu-icon">
                     <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0", }} />
@@ -222,7 +201,32 @@ function Header() {
 
                 <div className="menu-inner">
                   <div className="menu-content">
-                  <a href="">STATIONERY & OFFICE SUPPLIES</a>
+                    <a href=""> HOUSEHOLD CARE</a>
+                  </div>
+                  <div className="menu-icon">
+                    <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0", }} />
+                  </div>
+                </div>
+                <div className="menu-inner">
+                  <div className="menu-content">
+                    <a href="">FRESH FOOD</a>
+                  </div>
+                  <div className="menu-icon">
+                    <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0", }} />
+                  </div>
+                </div>
+                <div className="menu-inner">
+                  <div className="menu-content">
+                    <a href="">BABY CARE</a>
+                  </div>
+                  <div className="menu-icon">
+                    <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0", }} />
+                  </div>
+                </div>
+
+                <div className="menu-inner">
+                  <div className="menu-content">
+                    <a href="">STATIONERY & OFFICE SUPPLIES</a>
                   </div>
                   <div className="menu-icon">
                     <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0", }} />

@@ -2,8 +2,29 @@ import React from 'react'
 import Header from '../../components/Auth/Header'
 import Footer from '../../components/Auth/Footer'
 import card1 from '../../Asset/images/card-1.svg'
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
+import correct from '../../Asset/images/correct.svg'
+import notcorrect from '../../Asset/images/not-correct.svg'
 
 function Placeorder() {
+    const style = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: 600,
+        bgcolor: 'background.paper',
+        border: '0px solid #000',
+        boxShadow: 24,
+        p: 4,
+        outline: 0,
+        borderRadius: '8px',
+        padding: '25px',
+    };
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
     return (
         <div>
             <Header />
@@ -87,8 +108,45 @@ function Placeorder() {
                     </div>
                     <div className="place-order">
                         <p>Order Total:<span>$ 669</span></p>
-                        <button>PLACE ORDER</button>
-
+                        <button onClick={handleOpen}>PLACE ORDER</button>
+                        <Modal
+                            open={open}
+                            onClose={handleClose}
+                            aria-labelledby="modal-modal-title"
+                            aria-describedby="modal-modal-description"
+                        >
+                            <Box sx={style}>
+                                <div className="row login-row-popup">
+                                    <div className="center-icon">
+                                        <img src={correct}></img>
+                                    </div>
+                                    <h4 className='order-placed'>order successfully placed</h4>
+                                    <div className='border-bottom'></div>
+                                    <p className='order-confirmation'>In the unlikely case of items being unavailable.<br></br>
+                                        what would you prefer</p>
+                                    <button className='continue-shopping'>Continue Shopping</button>
+                                </div>
+                            </Box>
+                        </Modal>
+                        {/* <Modal
+                            open={open}
+                            onClose={handleClose}
+                            aria-labelledby="modal-modal-title"
+                            aria-describedby="modal-modal-description"
+                        >
+                            <Box sx={style}>
+                                <div className="row login-row-popup">
+                                    <div className="center-icon">
+                                        <img src={notcorrect}></img>
+                                    </div>
+                                    <h4 className='order-placed' style={{color:"red"}}>order failed</h4>
+                                    <div className='border-bottom'></div>
+                                    <p className='order-confirmation'>In the unlikely case of items being unavailable.<br></br>
+                                        what would you prefer</p>
+                                    <button className='continue-shopping'>Continue Shopping</button>
+                                </div>
+                            </Box>
+                        </Modal> */}
                     </div>
                 </div>
             </div>

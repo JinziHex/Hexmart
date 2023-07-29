@@ -35,12 +35,15 @@ ul {
     justify-content: space-between;
     margin: 30px 0;
 }
+
 .menu-inner:first-child {
     margin-top: 0;
 }
+
 .menu-inner:last-child {
     margin-bottom: 0;
 }
+
 #menu .menu-content a {
     color: #000;
     font-family: Titillium Web;
@@ -1380,6 +1383,7 @@ footer {
     font-weight: 600;
     line-height: normal;
     margin-right: 10px;
+    text-transform: uppercase;
 }
 
 .listing-categories .active {
@@ -2722,7 +2726,7 @@ footer {
 /* Edit profile */
 
 .edit-profile-main {
-    margin: 30px 0;
+    margin: 25px 0;
 }
 
 .edit-profile-h4 {
@@ -2751,9 +2755,25 @@ footer {
     height: auto;
     border-radius: 10px 10px 0 0;
     border: 1px solid #E7E8EA;
-    background: #FFF;
+    background: #F3F3F3;
     margin-top: 0;
     padding: 10px 15px;
+}
+
+.editprofile {
+    height: 55px;
+    background: #F3F3F3;
+    margin-top: 0;
+    padding: 10px 0px;
+    width: 294px;
+}
+
+.editprofile-inner.active {
+    background: #FFF;
+}
+
+.editprofile.active {
+    background: #FFF;
 }
 
 .editprofile-inner .user-info p {
@@ -2771,7 +2791,16 @@ footer {
     position: relative;
 }
 
-.editprofile-inner .user-icon:after {
+.editprofile .user-icon {
+    position: relative;
+    margin-left: 20px;
+}
+
+.editprofile .icon {
+    margin-left: 20px;
+}
+
+.editprofile-inner.active .user-icon:after {
     position: absolute;
     content: "";
     width: 6px;
@@ -2779,6 +2808,16 @@ footer {
     background: #1B85D7;
     top: -9px;
     left: -15px;
+}
+
+.editprofile.active .user-icon:after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 55px;
+    background: #1B85D7;
+    top: -12px;
+    left: -20px;
 }
 
 .editprofile-inner .user-info {
@@ -2792,18 +2831,18 @@ footer {
     border-radius: 0 0 10px 10px;
     border: 1px solid #E7E8EA;
     margin-top: 0;
-    padding: 25px 20px;
-    height: 555px;
+    padding: 25px 0px;
+    height: 500px;
 }
 
-.edit-menubar-1 {
+.edit-menubar .editprofile {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .menu-name {
-    margin-left: 22px;
     color: #000;
     font-family: Montserrat;
     font-size: 15px;
@@ -2811,6 +2850,7 @@ footer {
     font-weight: 600;
     line-height: normal;
     text-transform: capitalize;
+    margin-left: 20px;
 }
 
 .edit-profile-right-content {
@@ -2884,6 +2924,13 @@ footer {
 .edit-profile-right h3 {
     margin-left: 30px;
     margin-bottom: 10px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
 .date-of-birth {
@@ -2898,4 +2945,240 @@ footer {
     color: #fff;
 }
 
+.center-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.center-icon img {
+    width: 65px;
+    height: auto;
+}
+
+.order-placed {
+    color: #178110;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.border-bottom {
+    margin: 10px 0;
+    border-bottom: 1px solid #B4B4B4;
+}
+
+.order-confirmation {
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    text-transform: lowercase;
+    margin-bottom: 20px;
+    margin-top: 15px;
+
+}
+
+.continue-shopping {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    background: #0886E3;
+    width: 250px;
+    height: 55px;
+    border: none;
+    margin: auto;
+}
+
 /* Edit profile : End */
+
+/* Delivery address : start */
+.delivery-address-main {
+    margin: 25px 0;
+}
+
+.edit-profile-right .delivery-addresss {
+    border-radius: 10px;
+    border: 1px solid #ECECEC;
+    width: 400px;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.edit-profile-right .delivery-addresss .delivery-address-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 15px;
+    position: relative;
+}
+
+.edit-profile-right .delivery-addresss .delivery-address-name .name {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.edit-profile-right .delivery-addresss .delivery-address-name .button button {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    border-radius: 10px;
+    background: #0370C4;
+    padding: 10px 10px;
+    padding: 7px 10px;
+    margin-right: 70px;
+}
+
+.edit-button-inner-contents {
+    border-radius: 10px;
+    border: 1px solid rgba(236, 236, 236, 0.60);
+    background: #FFF;
+    box-shadow: 1px 2px 15px 5px rgba(0, 0, 0, 0.03);
+    width: 128px;
+    padding: 10px 18px;
+    position: absolute;
+    right: 30px;
+    top: 16px;
+}
+
+.edit-button-inner-contents .button-inner-contents .edit {
+    border: 0;
+    background: transparent;
+    color: #0085FF;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.edit-button-inner-contents .button-inner-contents .delete {
+    border: 0;
+    background: transparent;
+    color: #CC0B0B;
+    ;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button-inner-contents img {
+    width: 18px;
+    height: 18px;
+}
+
+.button-inner-contents {
+    padding: 0px 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-page-address p {
+    color: #2B2929;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 5px 15px 0px;
+}
+
+.add-new-address {
+    border: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: #1B85D7;
+    margin: auto;
+    display: block;
+    padding: 10px 10px;
+    padding: 12px 100px;
+}
+
+.popup-main {
+    text-align: center;
+}
+
+.popup-main .h3 {
+    color: #0370C4;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 0;
+}
+
+.popup-main p {
+    color: #3E3E3E;
+    font-family: Montserrat;
+    font-size: 18 px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 15px 0 20px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 27px;
+}
+
+.popup-buttons .cancel {
+    color: #A1A1A1;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    border: 1px solid #A1A1A1;
+    background: transparent;
+    padding: 10px 10px;
+}
+.popup-buttons .logout {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    background: #1B85D7;
+    border: 0;
+    padding: 10px 10px;
+}
+
+/* Delivery address : End */

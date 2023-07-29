@@ -11,6 +11,7 @@ import Shippingaddress from './Pages/Auth/Shippingaddress';
 import Paymentmethod from './Pages/Auth/Paymentmethod';
 import Placeorder from './Pages/Auth/Placeorder';
 import Editprofile from './Pages/Auth/Editprofile';
+import Deliveryaddress from './Pages/Auth/Deliveryaddress';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path='/paymentmethod' element={<Paymentmethod />}></Route>
             <Route path='/placeorder' element={<Placeorder />}></Route>
             <Route path='/editprofile' element={<Editprofile />}></Route>
+            <Route path='/deliveryaddress' element={<Deliveryaddress />}></Route>
           </Routes>
         </div>
       </BrowserRouter>
