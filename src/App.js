@@ -12,6 +12,7 @@ import Paymentmethod from './Pages/Auth/Paymentmethod';
 import Placeorder from './Pages/Auth/Placeorder';
 import Editprofile from './Pages/Auth/Editprofile';
 import Deliveryaddress from './Pages/Auth/Deliveryaddress';
+import Orderdetails from './Pages/Auth/Orderdetails';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path='/placeorder' element={<Placeorder />}></Route>
             <Route path='/editprofile' element={<Editprofile />}></Route>
             <Route path='/deliveryaddress' element={<Deliveryaddress />}></Route>
+            <Route path='/orderdetails' element={<Orderdetails />}></Route>
           </Routes>
         </div>
       </BrowserRouter>

@@ -3168,6 +3168,7 @@ footer {
     background: transparent;
     padding: 10px 10px;
 }
+
 .popup-buttons .logout {
     color: #ffffff;
     font-family: Montserrat;
@@ -3182,3 +3183,117 @@ footer {
 }
 
 /* Delivery address : End */
+
+/* Orderdetails */
+.order-details-main {
+    margin: 25px 0 0;
+}
+
+.order-details-body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.order-details {
+    width: 75%;
+}
+
+.track-order {
+    width: 25%;
+    padding: 0 20px;
+}
+
+.order-details-inner {
+    border: 1px solid #F3F3F3;
+    background: #F3F3F3;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.order-details-inner h4 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.person-information {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.person-information-1 {
+    width: 50%;
+}
+
+.sales {
+    display: flex;
+    width: 100%;
+}
+
+.sales-1 {
+    width: 50%;
+}
+
+.sales-2 {
+    width: 50%;
+    margin-left: 25px;
+}
+
+.sales-1 p {
+    color: #000;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.sales-2 p {
+    color: #000;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.sales-2 .payment-mode {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.total-order h5 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.qty {
+    color: rgba(0, 0, 0, 0.62);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Orderdetails : End*/

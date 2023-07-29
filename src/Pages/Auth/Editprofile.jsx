@@ -105,7 +105,7 @@ function Editprofile() {
                                         <input type='name' name='' value=''></input>
                                     </div>
                                     <div className="first-name">
-                                        <label>Mobile No</label>
+                                        <label>Mobile Number</label>
                                         <input type='name' name='' value=''></input>
                                     </div>
                                     <div className="first-name">
