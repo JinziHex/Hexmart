@@ -113,6 +113,10 @@ function Editprofile() {
                                         <input type='name' name='' value=''></input>
                                     </div>
                                     <div className="first-name">
+                                        <label>Location</label>
+                                        <input type='name' name='' value=''></input>
+                                    </div>
+                                    <div className="first-name">
                                         <select>
                                             <option value="">Gender</option>
                                             <option value="">January</option>
@@ -126,14 +130,50 @@ function Editprofile() {
                                             <input type='date' name='' value=''></input>
                                         </div>
                                     </div>
-                                    <div className="first-name">
-                                        <button>Save Changes</button>
+                                    <div className="adress-details">
+                                        <div className="country">
+                                            <select>
+                                                <option value="">Country</option>
+                                                <option value="">India</option>
+                                                <option value="">UAE</option>
+                                                <option value="">USA</option>
+                                                <option value="">China</option>
+                                            </select>
+                                        </div>
+                                        <div className="state">
+                                            <select>
+                                                <option>State</option>
+                                                <option>Kerala</option>
+                                                <option>Tamilnadu</option>
+                                                <option>Gujarat</option>
+                                                <option>UP</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className="adress-details">
+                                        <div className="country">
+                                            <select>
+                                                <option value="">District</option>
+                                                <option value="">Malapuram</option>
+                                                <option value="">Kozhikode</option>
+                                                <option value="">Kollam</option>
+                                                <option value="">Eranakulam</option>
+                                            </select>
+                                        </div>
+                                        <div className="state">
+                                            <div className="first-name">
+                                                <label>Pincode</label>
+                                                <input type='name' name='' value=''></input>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="first-name" style={{marginTop:"20px", width:"95%"}}>
+                                        <button>update</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <Footer />

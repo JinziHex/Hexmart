@@ -1657,6 +1657,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0;
 }
 
 .product-right-contents .heading {
@@ -1695,6 +1696,7 @@ footer {
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
+    margin-top: 17px;
 }
 
 .stock-details h5 span {
@@ -1985,7 +1987,14 @@ footer {
 }
 
 .product-right-cart {
-    width: 80%;
+    width: 50%;
+}
+
+.quantities {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .delivery-detail h4 {
@@ -2859,20 +2868,19 @@ footer {
     background: #FFF;
     width: 497px;
     height: auto;
-    padding: 20px 25px;
+    padding: 20px 0px 20px 25px;
 }
 
 .edit-profile-right-content .first-name input {
     display: block;
-    width: 100%;
+    width: 95%;
     border: 1px solid #E7E8EA;
     background: #FFF;
-    /* padding: 0px 10px; */
-    margin: 5px 0 20px 0;
     outline: 0;
     border-top: 0;
     border-left: 0;
     border-right: 0;
+    margin-bottom: 0;
 }
 
 .edit-profile-right-content .first-name label {
@@ -2883,15 +2891,16 @@ footer {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-top: 25px;
 }
 
 .edit-profile-right-content .first-name select {
     display: block;
-    width: 100%;
+    width: 95%;
     border: 1px solid #E7E8EA;
     background: #FFF;
-    padding: 15px 10px 25px 0;
-    margin: 5px 0 30px 0;
+    padding: 20px 10px 20px 0;
+    margin: 0px 0 5px 0;
     outline: 0;
     color: #aaa;
     border-top: 0;
@@ -2938,10 +2947,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-}
-
-.date-of-birth {
-    margin: 10px 0;
     color: #fff;
 }
 
@@ -3003,6 +3008,43 @@ footer {
     height: 55px;
     border: none;
     margin: auto;
+}
+
+.adress-details {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    align-items: center;
+}
+
+.country {
+    width: 50%;
+}
+
+.state {
+    width: 50%;
+}
+
+.adress-details select {
+    width: 95%;
+    /* margin: 0px 0 10px; */
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: 0;
+    border-bottom: 1px solid #ECECEC;
+    padding: 25px 10px 25px 0;
+    color: #000;
+}
+
+.adress-details option {
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
 }
 
 /* Edit profile : End */
@@ -3236,6 +3278,7 @@ footer {
 .sales {
     display: flex;
     width: 100%;
+    align-items: flex-start;
 }
 
 .sales-1 {
@@ -3254,7 +3297,7 @@ footer {
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 1.6;
     margin-bottom: 15px;
 }
 
@@ -3265,7 +3308,7 @@ footer {
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 1.6;
     margin-bottom: 15px;
 }
 
@@ -3275,7 +3318,7 @@ footer {
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 1.6;
 }
 
 .total-order h5 {
@@ -3297,3 +3340,57 @@ footer {
 }
 
 /* Orderdetails : End*/
+
+/* Timeline */
+.timeline-main {
+    margin-left: 20px;
+}
+
+.timeline-check {
+    margin-top: 100px;
+}
+
+.timeline-check div div:nth-child(1) {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.timeline-check div div:nth-child(2) {
+    color: #938E8E;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.timeline div div {
+    border: 0 !important;
+    background: #fff !important;
+}
+
+.timeline div div img {
+    background: #ffffff;
+    border-radius: 50%;
+    height: 50px !important;
+    width: 38px !important;
+
+}
+
+.timeline {
+    padding: 0 !important;
+    margin: -75px auto !important;
+}
+
+.timeline div {
+    height: 95% !important;
+}
+.timeline div:first-child {
+   width: 3px!important;
+}
+/* Timeline : end */
