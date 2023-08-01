@@ -98,7 +98,7 @@ function Editprofile() {
                                 </div>
                             </div>
                             <div className="edit-profile-right">
-                                <h3>Edit Profile Details</h3>
+                                <h3>Account Information</h3>
                                 <div className="edit-profile-right-content">
                                     <div className="first-name">
                                         <label>Full Name</label>

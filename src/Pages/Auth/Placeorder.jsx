@@ -42,7 +42,7 @@ function Placeorder() {
                                     <h4>PAYMENT</h4>
                                 </div>
                             </div>
-                            <div className="active progressbar">
+                            <div className="active progressbar" style={{background:"#0370C4"}}>
                                 <div className="inner-h4">
                                     <h4>CONFIRMATION</h4>
                                 </div>

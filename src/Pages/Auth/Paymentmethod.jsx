@@ -39,12 +39,10 @@ function Paymentmethod() {
                             <h2>CREDIT CARD INFORMATION</h2>
                             <div className="payment-form">
                                 <form>
-                                    <div className="name">
-                                        <div className="first-name">
+                                        <div className="address-1">
                                             <label>Name Of Card</label>
                                             <input type='name' name='' value=''></input>
                                         </div>
-                                    </div>
                                     <div className="address-1">
                                         <label>Credit Card Number</label>
                                         <input type='name' name='' value=''></input>

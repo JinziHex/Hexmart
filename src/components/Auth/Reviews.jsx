@@ -16,11 +16,48 @@ function Reviews() {
               <Rating name="read-only" value={value} readOnly />
             </div>
             <div className="progres-bar">
-              <Progressbar bgcolor="#FFD600" progress='90' height={17} />
-              <Progressbar bgcolor="#FFD600" progress='60' height={17} />
-              <Progressbar bgcolor="#FFD600" progress='50' height={17} />
-              <Progressbar bgcolor="#FFD600" progress='40' height={17} />
-              <Progressbar bgcolor="#FFD600" progress='20' height={17} />
+              <div className="rating-number">
+                <div className="rating-product">
+                  5
+                </div>
+                <div className="progressbar-rate">
+                  <Progressbar bgcolor="#FFD600" progress='90' height={17} />
+                </div>
+              </div>
+              <div className="rating-number">
+                <div className="rating-product">
+                  4
+                </div>
+                <div className="progressbar-rate">
+                  <Progressbar bgcolor="#FFD600" progress='60' height={17} />
+                </div>
+              </div>
+              <div className="rating-number">
+                <div className="rating-product">
+                  3
+                </div>
+                <div className="progressbar-rate">
+                  <Progressbar bgcolor="#FFD600" progress='50' height={17} />
+                </div>
+              </div>
+              <div className="rating-number">
+                <div className="rating-product">
+                  2
+                </div>
+                <div className="progressbar-rate">
+                  <Progressbar bgcolor="#FFD600" progress='40' height={17} />
+                </div>
+              </div>
+              <div className="rating-number">
+                <div className="rating-product">
+                  1
+                </div>
+                <div className="progressbar-rate">
+                  <Progressbar bgcolor="#FFD600" progress='20' height={17} />
+                </div>
+              </div>
+
+
             </div>
           </div>
           <div className="customer-review">

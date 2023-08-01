@@ -10,9 +10,10 @@ import Shoppingcart from './Pages/Auth/Shoppingcart';
 import Shippingaddress from './Pages/Auth/Shippingaddress';
 import Paymentmethod from './Pages/Auth/Paymentmethod';
 import Placeorder from './Pages/Auth/Placeorder';
-import Editprofile from './Pages/Auth/Editprofile';
+import Accountinformation from './Pages/Auth/Accountinformation';
 import Deliveryaddress from './Pages/Auth/Deliveryaddress';
 import Orderdetails from './Pages/Auth/Orderdetails';
+import Myorder from './Pages/Auth/Myorder';
 
 function App() {
   return (
@@ -31,9 +32,10 @@ function App() {
             <Route path='/shippingaddress' element={<Shippingaddress />}></Route>
             <Route path='/paymentmethod' element={<Paymentmethod />}></Route>
             <Route path='/placeorder' element={<Placeorder />}></Route>
-            <Route path='/editprofile' element={<Editprofile />}></Route>
+            <Route path='/accountinformation' element={<Accountinformation />}></Route>
             <Route path='/deliveryaddress' element={<Deliveryaddress />}></Route>
             <Route path='/orderdetails' element={<Orderdetails />}></Route>
+            <Route path='/myorder' element={<Myorder />}></Route>
           </Routes>
         </div>
       </BrowserRouter>

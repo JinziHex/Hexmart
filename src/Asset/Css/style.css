@@ -764,6 +764,42 @@ input[type=radio]:focus {
     display: none;
 }
 
+.courosal-main .container div {
+    opacity: 1 !important;
+}
+
+.courosal-main .container div div div:nth-child(7) {
+    transform: translateY(-50%) translateX(-33%) scale(0.6) !important;
+}
+
+.courosal-main .container div div div:nth-child(8) {
+    transform: translateY(-50%) translateX(-52%) scale(0.4) !important;
+}
+
+.courosal-main .container div div div:nth-child(9) {
+    transform: translateY(-50%) translateX(-90%) scale(0.2) !important;
+}
+
+.courosal-main .container div div div:nth-child(3) {
+    transform: translateY(-50%) translateX(-68%) scale(0.6) !important;
+}
+
+.courosal-main .container div div div:nth-child(4) {
+    transform: translateY(-50%) translateX(-68%) scale(0.8) !important;
+}
+
+.courosal-main .container div div div:nth-child(2) {
+    transform: translateY(-50%) translateX(-51%) scale(0.4) !important;
+}
+
+.courosal-main .container div div div:nth-child(1) {
+    transform: translateY(-50%) translateX(-14%) scale(0.2) !important;
+}
+
+.courosal-main .container div div div:nth-child(6) {
+    transform: translateY(-50%) translateX(-33%) scale(0.8) !important;
+}
+
 .courosal-main h3 {
     color: #025391;
     font-family: Titillium Web;
@@ -848,6 +884,7 @@ input[type=radio]:focus {
 
 .stars {
     display: flex;
+    margin: 10px 0;
 }
 
 .stars .css-ryrseu-MuiRating-root {
@@ -1225,6 +1262,7 @@ footer {
     font-weight: 700;
     line-height: normal;
     margin-top: 0;
+    margin-bottom: 55px;
 }
 
 .tending-offer-contents h4 {
@@ -1491,6 +1529,7 @@ footer {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-transform: uppercase;
 }
 
 .listening-content-inner form label {
@@ -1501,6 +1540,7 @@ footer {
     font-weight: 400;
     line-height: normal;
     margin-left: 10px;
+    text-transform: uppercase;
 }
 
 .listening-content-inner form {
@@ -1833,11 +1873,35 @@ footer {
     margin: 0;
 }
 
+.rating-number {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.rating-product {
+    width: 5%;
+}
+
+.progressbar-rate {
+    width: 95%;
+}
+
 /* Product description : End*/
 /* Progressbar */
 .review-inner .progres-bar div {
     border-radius: 0;
-    margin: 15px 0;
+    margin: -6px 0;
+}
+
+.rating-product {
+    color: rgba(17, 97, 158, 0.99);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .review-1 {
@@ -2804,7 +2868,11 @@ footer {
     position: relative;
     margin-left: 20px;
 }
-
+/* .editprofile.active .user-icon{
+    filter: drop-shadow(0px 0px #1B85D7);
+    filter: blur(0);
+    filter: opacity(1);
+} */
 .editprofile .icon {
     margin-left: 20px;
 }
@@ -2823,9 +2891,9 @@ footer {
     position: absolute;
     content: "";
     width: 6px;
-    height: 55px;
+    height: 54px;
     background: #1B85D7;
-    top: -12px;
+    top: -16px;
     left: -20px;
 }
 
@@ -2840,17 +2908,18 @@ footer {
     border-radius: 0 0 10px 10px;
     border: 1px solid #E7E8EA;
     margin-top: 0;
-    padding: 25px 0px;
     height: 500px;
 }
 
 .edit-menubar .editprofile {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin: 15px 0;
     cursor: pointer;
 }
-
+.edit-menubar .editprofile:first-child{
+    margin-top: 0!important;
+}
 .menu-name {
     color: #000;
     font-family: Montserrat;
@@ -3390,7 +3459,150 @@ footer {
 .timeline div {
     height: 95% !important;
 }
+
 .timeline div:first-child {
-   width: 3px!important;
+    width: 3px !important;
 }
+
 /* Timeline : end */
+/* My order : start */
+.myorder-main {
+    margin: 25px 0;
+}
+
+.edit-profile-right-order .filter {
+    border-radius: 10px;
+    border: 1px solid #0370C4;
+    color: #0370C4;
+    font-family: Titillium Web;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 8px 36px 8px 22px;
+    float: right;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.edit-profile-right-order .filter::after {
+    content: "";
+    position: absolute;
+    background: url("../images/down.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: 13px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+}
+
+.edit-profile-right-order {
+    width: 80%;
+    position: relative;
+}
+
+.order {
+    position: absolute;
+    right: 0;
+    top: 46px;
+}
+
+.orderd-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.orderd-items-img {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.orderd-items-img img {
+    width: 75px;
+    height: auto;
+}
+
+.orderd-items-img span {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+}
+
+.orderd-description {
+    width: 35%;
+}
+
+.delivery-date {
+    width: 40%;
+}
+
+.delivery-date-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delivery-date-inner .delivery-date {
+    color: #090909;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 140px;
+}
+
+.order-number {
+    color: #BBB;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.order-id {
+    color: #090909;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.order-description-inner {
+    margin: 10px 0;
+}
+
+/* My order : End */
+.delivery-address-main .editprofile.active .user-icon:after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 54px;
+    background: #1B85D7;
+    top: -11px;
+    left: -20px;
+}

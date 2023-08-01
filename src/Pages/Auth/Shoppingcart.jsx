@@ -18,7 +18,7 @@ function Shoppingcart() {
                   <div className="added-item-img">
                     <img src={peach}></img>
                   </div>
-                  <div className="product-right-cart">
+                  <div className="product-right-cart"style={{width:"80%"}}>
                     <div className="product-right-contents">
                       <div className="heading">PEACH</div>
                       <div className="delivery-detail">
@@ -46,7 +46,7 @@ function Shoppingcart() {
                   <div className="added-item-img">
                     <img src={listing8}></img>
                   </div>
-                  <div className="product-right-cart">
+                  <div className="product-right-cart" style={{width:"80%"}}>
                     <div className="product-right-contents">
                       <div className="heading">ORANGE</div>
                       <div className="delivery-detail">
