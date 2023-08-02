@@ -12,7 +12,7 @@ function Reviews() {
         <div className="review-inner">
           <div className="customer-rating">
             <h4>Customer reviews</h4>
-            <div className="stars">
+            <div className="stars-reviews">
               <Rating name="read-only" value={value} readOnly />
             </div>
             <div className="progres-bar">
