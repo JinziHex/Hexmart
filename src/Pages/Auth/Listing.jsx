@@ -29,7 +29,7 @@ import { useState } from 'react'
 function Listing() {
     const [value, setValue] = React.useState(2);
 
-    let [count, setCount] = useState(0);
+    let [count, setCount] = useState(1);
 
     function incrementCount() {
         count = count + 1;

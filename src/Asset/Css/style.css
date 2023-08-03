@@ -19,6 +19,40 @@ ul {
     padding: 0;
 }
 
+#menu {
+    width: 250px;
+    height: auto;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+    padding: 15px 15px;
+    position: absolute;
+    top: 184px;
+    z-index: 2;
+}
+
+.menu-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.menu-inner:first-child {
+    margin-top: 0;
+}
+
+.menu-inner:last-child {
+    margin-bottom: 0;
+}
+
+#menu .menu-content a {
+    color: #000;
+    font-family: Titillium Web;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
 .header-main {
     border-bottom: 1px solid #2270AD;
 }
@@ -104,6 +138,17 @@ ul {
 
 .react-tabs__tab:focus:after {
     display: none;
+}
+
+.react-multi-carousel-dot button {
+    width: 5px !important;
+    height: 5px !important;
+    background: #BBBEC0 !important;
+    border: 0 !important;
+}
+
+.react-multi-carousel-dot button:hover {
+    background: #1B85D7 !important;
 }
 
 label {
@@ -461,6 +506,7 @@ input {
     width: 225px;
     height: auto;
     align-items: center;
+    position: relative;
     padding: 22px;
 }
 
@@ -514,7 +560,7 @@ input {
 }
 
 .hamburger-init:checked+.menu .bar1 {
-    transform: translateY(5px) rotate(45deg);
+    transform: translateY(4.5px) rotate(45deg);
 }
 
 .hamburger-init:checked+.menu .bar2 {
@@ -522,7 +568,7 @@ input {
 }
 
 .hamburger-init:checked+.menu .bar3 {
-    transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-6.5px) rotate(-45deg);
 }
 
 input[type=file]:focus,
@@ -718,6 +764,42 @@ input[type=radio]:focus {
     display: none;
 }
 
+.courosal-main .container div {
+    opacity: 1 !important;
+}
+
+.courosal-main .container div div div:nth-child(7) {
+    transform: translateY(-50%) translateX(-33%) scale(0.6) !important;
+}
+
+.courosal-main .container div div div:nth-child(8) {
+    transform: translateY(-50%) translateX(-52%) scale(0.4) !important;
+}
+
+.courosal-main .container div div div:nth-child(9) {
+    transform: translateY(-50%) translateX(-90%) scale(0.2) !important;
+}
+
+.courosal-main .container div div div:nth-child(3) {
+    transform: translateY(-50%) translateX(-68%) scale(0.6) !important;
+}
+
+.courosal-main .container div div div:nth-child(4) {
+    transform: translateY(-50%) translateX(-68%) scale(0.8) !important;
+}
+
+.courosal-main .container div div div:nth-child(2) {
+    transform: translateY(-50%) translateX(-51%) scale(0.4) !important;
+}
+
+.courosal-main .container div div div:nth-child(1) {
+    transform: translateY(-50%) translateX(-14%) scale(0.2) !important;
+}
+
+.courosal-main .container div div div:nth-child(6) {
+    transform: translateY(-50%) translateX(-33%) scale(0.8) !important;
+}
+
 .courosal-main h3 {
     color: #025391;
     font-family: Titillium Web;
@@ -804,6 +886,11 @@ input[type=radio]:focus {
     display: flex;
 }
 
+.stars-reviews {
+    margin: 10px 0;
+    display: flex;
+}
+
 .stars .css-ryrseu-MuiRating-root {
     font-size: 1.8rem;
 }
@@ -813,11 +900,11 @@ input[type=radio]:focus {
 }
 
 .categories .kVtMtA {
-    left: -30px;
+    left: -33px;
 }
 
 .categories .bhRnqO {
-    right: -30px;
+    right: -40px;
 }
 
 .categories .kVtMtA {
@@ -831,7 +918,7 @@ input[type=radio]:focus {
 .category-button {
     border-radius: 10px;
     background: #0370C4;
-    box-shadow: 0px 4px 22px -3px #4AB6FF;
+    box-shadow: 0px 4px 5px -3px #4AB6FF;
     border: none;
     color: #FFF;
     font-family: Titillium Web;
@@ -897,6 +984,11 @@ input[type=radio]:focus {
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    flex-direction: column;
+}
+
+.react-multi-carousel-list {
+    width: 100% !important;
 }
 
 .trending-brands .kVtMtA {
@@ -1001,6 +1093,10 @@ input[type=radio]:focus {
     padding: 0px 20px;
 }
 
+.react-multiple-carousel__arrow {
+    display: none;
+}
+
 .trending-products-inner a img {
     object-fit: contain;
     width: 200px;
@@ -1024,6 +1120,10 @@ input[type=radio]:focus {
 /* Trending product : end */
 
 /* Footer */
+footer {
+    padding-top: 15px;
+}
+
 .footer-div {
     background-color: #304F67;
 }
@@ -1049,7 +1149,7 @@ input[type=radio]:focus {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 1.6;
     position: relative;
 }
 
@@ -1166,10 +1266,11 @@ footer {
     font-weight: 700;
     line-height: normal;
     margin-top: 0;
+    margin-bottom: 55px;
 }
 
 .tending-offer-contents h4 {
-    margin-top: 50px;
+    margin-top: 0px;
     color: #FFF;
     font-family: Montserrat;
     font-size: 16px;
@@ -1201,12 +1302,11 @@ footer {
 }
 
 .trending-offers {
-
     border-radius: 12px;
     overflow: hidden;
     position: relative;
     z-index: 1;
-    margin: 10px;
+    margin: 0px 25px 0 0;
 }
 
 .trending-offers:after {
@@ -1232,7 +1332,7 @@ footer {
 }
 
 .tending-offer-contents {
-    padding: 16px 20px;
+    padding: 22px 25px;
     position: relative;
     z-index: 1;
 
@@ -1325,6 +1425,7 @@ footer {
     font-weight: 600;
     line-height: normal;
     margin-right: 10px;
+    text-transform: uppercase;
 }
 
 .listing-categories .active {
@@ -1432,6 +1533,7 @@ footer {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-transform: uppercase;
 }
 
 .listening-content-inner form label {
@@ -1442,6 +1544,7 @@ footer {
     font-weight: 400;
     line-height: normal;
     margin-left: 10px;
+    text-transform: uppercase;
 }
 
 .listening-content-inner form {
@@ -1598,6 +1701,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0;
 }
 
 .product-right-contents .heading {
@@ -1636,6 +1740,7 @@ footer {
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
+    margin-top: 17px;
 }
 
 .stock-details h5 span {
@@ -1772,11 +1877,35 @@ footer {
     margin: 0;
 }
 
+.rating-number {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.rating-product {
+    width: 5%;
+}
+
+.progressbar-rate {
+    width: 95%;
+}
+
 /* Product description : End*/
 /* Progressbar */
 .review-inner .progres-bar div {
     border-radius: 0;
-    margin: 15px 0;
+    margin: -6px 0;
+}
+
+.rating-product {
+    color: rgba(17, 97, 158, 0.99);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .review-1 {
@@ -1889,13 +2018,15 @@ footer {
 
 .order-price {
     width: 20%;
+    margin-left: 5px;
+
 }
 
 .shopping-cart-main {
     margin: 30px 0;
 }
 
-.cart-items h4 {
+.shopping-cart {
     color: #212121;
     font-family: Montserrat;
     font-size: 20px;
@@ -1905,9 +2036,1617 @@ footer {
     text-transform: uppercase;
     border: 1px solid #EAE6E6;
     background: #FFF;
-    width: 90%;
     height: auto;
     padding: 25px 20px;
 }
 
+.added-item-1 {
+    display: flex;
+}
+
+.added-item-img {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.added-item-1 img {
+    width: 150px;
+}
+
+.product-right-cart {
+    width: 50%;
+}
+
+.quantities {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delivery-detail h4 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 10px;
+}
+
+.delivery-detail h4 .free {
+    color: #0AA02B;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.delivery-detail h5 {
+    color: #BBB;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: strikethrough;
+    position: relative;
+}
+
+.delivery-detail {
+    display: flex;
+    align-items: center;
+}
+
+.delivery-detail h5:after {
+    content: "";
+    position: absolute;
+    background: #E2DFDF;
+    width: 34px;
+    height: 1px;
+    bottom: 8px;
+    left: 0;
+    margin: 0;
+}
+
+.added-item-1 {
+    border: 1px solid #F0F0F0;
+    padding: 15px 25px;
+    margin-bottom: 10px;
+}
+
+.cart-buttons button {
+    background: transparent;
+    border: none;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 10px 0px 0;
+}
+
+.cart-buttons .later {
+    margin-right: 40px;
+}
+
+.price-details-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pricedetails {
+    border: 1px solid #F0F0F0;
+    padding: 15px 10px;
+}
+
+.content-price p {
+    color: #3C3939;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.price-details div {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.totalamount {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.placeorder {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: #0F8EEF;
+    width: 230px;
+    height: 66px;
+    border: none;
+    display: block;
+}
+
+.Shopping {
+    color: rgba(15, 142, 239, 0.63);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: rgba(99, 93, 93, 0.05);
+    border: none;
+    display: block;
+    width: 230px;
+    height: 66px;
+}
+
+.shopping-cartt {
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 1px solid #EAE6E6;
+    background: #FFF;
+    height: auto;
+    padding: 25px 10px;
+}
+
 /* Shoppingcart : end */
+
+/* Shipping address : start */
+
+.advantages-shipping {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding-top: 5px;
+    margin: 30px 0;
+}
+
+.active {
+    width: 25%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.advantage {
+    width: 25%;
+    height: auto;
+    background: #DADADA;
+    position: relative;
+    z-index: 1;
+}
+
+.advantage.progressbar {
+    z-index: 2;
+}
+
+.advantage.progressbar:first-child {
+    z-index: 3;
+}
+
+.active.progressbar::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/angleright.svg'),
+        url('../images/angleright-fill.svg');
+    background-size: contain, cover;
+    background-position: right center, right center;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.advantage.progressbar::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/angleright-fill-inactive.svg');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    right: -10%;
+    top: 0;
+    z-index: -1;
+}
+
+.progressbar:last-child::after {
+    background: transparent;
+}
+
+.inner-h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 46px 10px 26px;
+}
+
+.active.progressbar .inner-h4 h4 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.advantage .inner-h4 h4 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.delivery-address {
+    display: flex;
+    width: 100%;
+}
+
+.shipping-address {
+    width: 50%;
+    padding: 10px 30px 0 0;
+}
+
+.billing-address {
+    width: 50%;
+    padding: 10px 0px 0 30px;
+
+}
+
+.shipping-address h2 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.billing-address h2 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.shipping-address .name {
+    display: flex;
+    width: 100%;
+}
+
+.shipping-address .first-name {
+    width: 50%;
+}
+
+.shipping-address .last-name {
+    width: 50%;
+}
+
+.shipping-address .name input {
+    display: block;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 20px 0;
+    outline: 0;
+}
+
+.shipping-address .name label {
+    color: #767272;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.address-1 input {
+    display: block;
+    width: 95%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 20px 0;
+    outline: 0;
+}
+
+.address-1 label {
+    color: #767272;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.address-2 input {
+    display: block;
+    width: 95%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 10px 0;
+    outline: 0;
+}
+
+.address-2 label {
+    color: #767272;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 5px;
+}
+
+.billing-address .name {
+    display: flex;
+    width: 100%;
+}
+
+.billing-address .first-name {
+    width: 50%;
+}
+
+.billing-address .last-name {
+    width: 50%;
+}
+
+.billing-address .name input {
+    display: block;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 20px 0;
+    outline: 0;
+}
+
+.billing-address .name label {
+    color: #767272;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.submit-button button {
+    background: #0F8EEF;
+    border: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 20px 25px;
+    margin: 10px 20px 35px
+}
+
+.cardtype {
+    width: 50%;
+    padding: 10px 30px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.cardtype h2 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.shipping-address .name select {
+    display: block;
+    width: 85%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 20px 0;
+    outline: 0;
+    color: #aaa;
+}
+
+.shipping-address .name select option {
+    color: #111;
+}
+
+/* shippingaddress : end */
+
+
+/* payment method */
+.expiry-dates {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.expiry-date {
+    width: 50%;
+}
+
+.checkbox label {
+    padding-left: 0;
+    color: #767272;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.checkbox {
+    margin-left: 20px;
+}
+
+.payment-form {
+    display: flex;
+    width: 100%;
+}
+
+.payment-form form {
+    width: 50%;
+}
+
+.payment-method h2 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.payment-method .name {
+    display: flex;
+    width: 100%;
+}
+
+.payment-method .first-name {
+    width: 50%;
+}
+
+.payment-method .last-name {
+    width: 50%;
+}
+
+.payment-method .name input {
+    display: block;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 20px 0;
+    outline: 0;
+}
+
+.payment-method .name label {
+    color: #767272;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.payment-method .name select {
+    display: block;
+    width: 85%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 20px 0;
+    outline: 0;
+    color: #aaa;
+}
+
+.payment-method .name select option {
+    color: #111;
+}
+
+.billing-information {
+    width: 50%;
+}
+
+.cardtypes {
+    display: flex;
+    align-items: center;
+}
+
+.card-1 {
+    margin: 0 10px 0 0;
+}
+
+.atmcards {
+    margin-top: -50px;
+}
+
+.shippingaddress {
+    width: 50%;
+    padding: 10px 30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.shippingaddress::after {
+    position: absolute;
+    content: "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _";
+    left: 3px;
+    bottom: 0;
+    color: #E7E8EA;
+}
+
+.your-information {
+    width: 50%;
+    padding: 10px 30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.your-information::after {
+    position: absolute;
+    content: "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _";
+    left: 3px;
+    bottom: 0;
+    color: #E7E8EA;
+}
+
+.your-information .name select {
+    display: block;
+    width: 85%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 15px 10px;
+    margin: 5px 0 20px 0;
+    outline: 0;
+    color: #aaa;
+}
+
+.your-information .name select option {
+    color: #111;
+}
+
+.your-information h2 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.shippingaddress h2 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.your-information button {
+    color: #0F8EEF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    background: transparent;
+    padding: 10px 30px 0 0;
+
+}
+
+.shippingaddress button {
+    color: #0F8EEF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    background: transparent;
+    padding: 10px 30px 0 0;
+
+}
+
+.delivery-address-body {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.delivery-address-name {
+    width: 50%;
+}
+
+.delivery-address-name h3 {
+    text-transform: capitalize;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.delivery-address-name h4 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.delivery-address-name.address h3 {
+    color: #504F4F;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.delivery-address-name img {
+    width: 60px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.place-order {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.place-order button {
+    background: #0F8EEF;
+    border: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 20px 25px;
+    margin: 10px 20px 35px
+}
+
+.place-order p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.place-order p span {
+    color: #000;
+    font-family: Titillium Web;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5px;
+}
+
+/* payment method : End */
+
+/* Edit profile */
+
+.edit-profile-main {
+    margin: 25px 0;
+}
+
+.edit-profile-h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 10px 46px 0px 0px;
+}
+
+.edit-profile-h4 h4 {
+    color: #0C5C9A;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.editprofile-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 296px;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #f2f3f5;
+    background: #F3F3F3;
+    margin-top: 0;
+    padding: 10px 15px;
+}
+
+.editprofile {
+    height: 55px;
+    background: #F3F3F3;
+    margin-top: 0;
+    padding: 10px 0px;
+    width: 294px;
+}
+
+.editprofile-inner.active {
+    background: #FFF;
+}
+
+.editprofile.active {
+    background: #FFF;
+}
+
+.editprofile-inner .user-info p {
+    color: #000;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 5px;
+}
+
+.editprofile-inner .user-icon {
+    position: relative;
+}
+
+.editprofile .user-icon {
+    position: relative;
+    margin-left: 20px;
+}
+
+.editprofile.active .user-icon img {
+    /* -webkit-filter: opacity(.5) drop-shadow(0 0 0 #1B85D7);
+     filter: opacity(.5) drop-shadow(0 0 0 #1B85D7); */
+}
+
+.editprofile .icon {
+    margin-left: 20px;
+}
+
+.editprofile .icon img {
+    display: none;
+}
+
+.editprofile .icon img.orderlocation {
+    display: block;
+}
+
+.editprofile.active .user-icon img {
+    display: block;
+}
+
+.editprofile.active .user-icon img.orderlocation {
+    display: none;
+}
+
+.editprofile-inner.active .user-icon:after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 65px;
+    background: #0d4169;
+    top: -9px;
+    left: -15px;
+}
+
+.editprofile.active .user-icon:after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 54px;
+    background: #1B85D7;
+    top: -16px;
+    left: -20px;
+}
+
+.editprofile-inner .user-info {
+    margin-left: -35px;
+}
+
+.edit-menubar {
+    background: #F3F3F3;
+    width: 296px;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #E7E8EA;
+    margin-top: 0;
+    height: 500px;
+}
+
+.edit-menubar .editprofile {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.edit-menubar .editprofile:first-child {
+    margin-top: 0 !important;
+}
+
+.menu-name {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+
+.edit-profile-right-content {
+    border-radius: 10px;
+    border: 1px solid #ECECEC;
+    background: #FFF;
+    width: 497px;
+    height: auto;
+    padding: 20px 0px 20px 25px;
+}
+
+.edit-profile-right-content .first-name input {
+    display: block;
+    width: 95%;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    outline: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 0;
+}
+
+.edit-profile-right-content .first-name label {
+    color: rgba(0, 0, 0, 0.80);
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 25px;
+}
+
+.edit-profile-right-content .first-name select {
+    display: block;
+    width: 95%;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 20px 10px 20px 0;
+    margin: 0px 0 5px 0;
+    outline: 0;
+    color: #aaa;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.edit-profile-right-content .first-name button {
+    width: 100%;
+    display: block;
+    background: #1B85D7;
+    border: none;
+    height: 50px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 30px 0 30px 0;
+    margin: auto;
+}
+
+.edit-profile-right h3 {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.date-of-birth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+}
+
+.center-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.center-icon img {
+    width: 65px;
+    height: auto;
+}
+
+.order-placed {
+    color: #178110;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.border-bottom {
+    margin: 10px 0;
+    border-bottom: 1px solid #B4B4B4;
+}
+
+.order-confirmation {
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    text-transform: lowercase;
+    margin-bottom: 20px;
+    margin-top: 15px;
+
+}
+
+.continue-shopping {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    background: #0886E3;
+    width: 250px;
+    height: 55px;
+    border: none;
+    margin: auto;
+}
+
+.adress-details {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    align-items: center;
+}
+
+.country {
+    width: 50%;
+}
+
+.state {
+    width: 50%;
+}
+
+.adress-details select {
+    width: 95%;
+    /* margin: 0px 0 10px; */
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: 0;
+    border-bottom: 1px solid #ECECEC;
+    padding: 25px 10px 25px 0;
+    color: #000;
+}
+
+.adress-details option {
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+/* Edit profile : End */
+
+/* Delivery address : start */
+.delivery-address-main {
+    margin: 25px 0;
+}
+
+.edit-profile-right .delivery-addresss {
+    border-radius: 10px;
+    border: 1px solid #ECECEC;
+    width: 400px;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.edit-profile-right .delivery-addresss .delivery-address-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 15px;
+    position: relative;
+}
+
+.edit-profile-right .delivery-addresss .delivery-address-name .name {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.edit-profile-right .delivery-addresss .delivery-address-name .button button {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    border-radius: 10px;
+    background: #0370C4;
+    padding: 10px 10px;
+    padding: 7px 10px;
+    margin-right: 70px;
+}
+
+.edit-button-inner-contents {
+    border-radius: 10px;
+    border: 1px solid rgba(236, 236, 236, 0.60);
+    background: #FFF;
+    box-shadow: 1px 2px 15px 5px rgba(0, 0, 0, 0.03);
+    width: 128px;
+    padding: 10px 18px;
+    position: absolute;
+    right: 30px;
+    top: 16px;
+}
+
+.edit-button-inner-contents .button-inner-contents .edit {
+    border: 0;
+    background: transparent;
+    color: #0085FF;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.edit-button-inner-contents .button-inner-contents .delete {
+    border: 0;
+    background: transparent;
+    color: #CC0B0B;
+    ;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button-inner-contents img {
+    width: 18px;
+    height: 18px;
+}
+
+.button-inner-contents {
+    padding: 0px 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-page-address p {
+    color: #2B2929;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 5px 15px 0px;
+}
+
+.add-new-address {
+    border: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: #1B85D7;
+    margin: auto;
+    display: block;
+    padding: 10px 10px;
+    padding: 12px 100px;
+}
+
+.popup-main {
+    text-align: center;
+}
+
+.popup-main .h3 {
+    color: #0370C4;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 0;
+}
+
+.popup-main p {
+    color: #3E3E3E;
+    font-family: Montserrat;
+    font-size: 18 px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 15px 0 20px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 27px;
+}
+
+.popup-buttons .cancel {
+    color: #A1A1A1;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    border: 1px solid #A1A1A1;
+    background: transparent;
+    padding: 10px 10px;
+}
+
+.popup-buttons .logout {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    background: #1B85D7;
+    border: 0;
+    padding: 10px 10px;
+}
+
+/* Delivery address : End */
+
+/* Orderdetails */
+.order-details-main {
+    margin: 25px 0 0;
+}
+
+.order-details-body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.order-details {
+    width: 75%;
+}
+
+.track-order {
+    width: 25%;
+    padding: 0 20px;
+}
+
+.order-details-inner {
+    border: 1px solid #F3F3F3;
+    background: #F3F3F3;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.order-details-inner h4 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.person-information {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.person-information-1 {
+    width: 50%;
+}
+
+.sales {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.sales-1 {
+    width: 50%;
+}
+
+.sales-2 {
+    width: 50%;
+    margin-left: 25px;
+}
+
+.sales-1 p {
+    color: #000;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.sales-2 p {
+    color: #000;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.sales-2 .payment-mode {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.total-order h5 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.qty {
+    color: rgba(0, 0, 0, 0.62);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Orderdetails : End*/
+
+/* Timeline */
+.timeline-main {
+    margin-left: 20px;
+}
+
+.timeline-check {
+    margin-top: 100px;
+}
+
+.timeline-check div div:nth-child(1) {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.timeline-check div div:nth-child(2) {
+    color: #938E8E;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.timeline div div {
+    border: 0 !important;
+    background: #fff !important;
+}
+
+.timeline div div img {
+    background: #ffffff;
+    border-radius: 50%;
+    height: 50px !important;
+    width: 38px !important;
+
+}
+
+.timeline {
+    padding: 0 !important;
+    margin: -75px auto !important;
+}
+
+.timeline div {
+    height: 95% !important;
+}
+
+.timeline div:first-child {
+    width: 3px !important;
+}
+
+/* Timeline : end */
+/* My order : start */
+.myorder-main {
+    margin: 25px 0;
+}
+
+.edit-profile-right-order .filter {
+    border-radius: 10px;
+    border: 1px solid #0370C4;
+    color: #0370C4;
+    font-family: Titillium Web;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 8px 36px 8px 22px;
+    float: right;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.edit-profile-right-order .filter::after {
+    content: "";
+    position: absolute;
+    background: url("../images/down.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: 13px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+}
+
+.edit-profile-right-order {
+    width: 80%;
+    position: relative;
+}
+
+.order {
+    position: absolute;
+    right: 0;
+    top: 46px;
+}
+
+.orderd-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    border-radius: 10px;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 10px 20px 10px 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.orderd-items-img {
+    width: 200px;
+}
+
+.orderd-items-img-inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 200px;
+    padding: 0 10px;
+    height: 200px;
+}
+
+.orderd-items-img .image-div {
+    max-height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50%;
+}
+.orderd-items-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.orderd-items-img span {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+}
+
+.orderd-description {
+    width: 40%;
+}
+
+.delivery-date {
+    width: 40%;
+}
+
+.delivery-date-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delivery-date-inner .delivery-date {
+    color: #090909;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 140px;
+}
+
+.order-number {
+    color: #BBB;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.order-id {
+    color: #090909;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.order-description-inner {
+    margin: 10px 0;
+}
+
+/* My order : End */
+.delivery-address-main .editprofile.active .user-icon:after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 54px;
+    background: #1B85D7;
+    top: -11px;
+    left: -20px;
+}
+
+/* Wallet page : start */
+.wallet-page-main {
+    margin: 25px 0;
+}
+
+/* Wallet page : End */

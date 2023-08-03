@@ -29,27 +29,12 @@ import specialproducttwo from '../../Asset/images/specialproduct-two.png'
 import specialproductthree from '../../Asset/images/specialproduct-three.png'
 import specialproductfour from '../../Asset/images/specialproduct-four.png'
 import specialproductfive from '../../Asset/images/specialproduct-five.png'
-import offerone from '../../Asset/images/offer-one.png'
-import offertwo from '../../Asset/images/offer-two.png'
-import offerthree from '../../Asset/images/offer-three.png'
-import offerfour from '../../Asset/images/offer-four.png'
-import offerfive from '../../Asset/images/offer-five.png'
 import cartt from '../../Asset/images/cartt.svg'
 import Rating from '@mui/material/Rating';
 import Carousel from 'react-grid-carousel';
-import "react-multi-carousel/lib/styles.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import Sliderhome from '../../components/Auth/Sliderhome'
 
 function Body() {
-    const settings = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 5
-    };
     const [value, setValue] = React.useState(2);
     return (
 
@@ -123,7 +108,7 @@ function Body() {
                         <div className="categories">
                             <Carousel cols={5} rows={1} gap={10} loop>
                                 <Carousel.Item>
-                                <div className="catogories-inner">
+                                    <div className="catogories-inner">
                                         <div className="category-img">
                                             <a><img src={categoryimgone} alt=''></img></a>
                                             <div className="glass">
@@ -672,79 +657,7 @@ function Body() {
                         </div>
                     </div>
                 </div>
-
-
-                <div className="trending-product-main">
-                    <div className="container">
-                        <div className="trending-product">
-                            <div className="trending-brands">
-                                {/* <Slider {...settings}> */}
-                                <div className="trending-offers">
-                                    <img className='offer-img' src={offerone} alt=''></img>
-                                    <div className="tending-offer-contents">
-                                        <h2>UP TO <br/>40 % OFF</h2>
-                                        <h4>Delicious cake</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing, sed do
-                                        </p>
-                                        <button>SHOP NOW</button>
-                                    </div>
-                                </div>
-
-                                <div className="trending-offers">
-                                    <img className='offer-img' src={offertwo} alt=''></img>
-                                    <div className="tending-offer-contents">
-                                        <h2>UP TO <br/>40 % OFF</h2>
-                                        <h4>Delicious cake</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing, sed do
-                                        </p>
-                                        <button>SHOP NOW</button>
-                                    </div>
-                                </div>
-                                <div className="trending-offers">
-                                <img className='offer-img' src={offerthree} alt=''></img>
-                                    <div className="tending-offer-contents">
-                                        <h2>UP TO <br/>40 % OFF</h2>
-                                        <h4>Delicious cake</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing, sed do
-                                        </p>
-                                        <button>SHOP NOW</button>
-                                    </div>
-                                </div>
-                                <div className="trending-offers">
-                                    <img className='offer-img' src={offerfour} alt=''></img>
-                                    <div className="tending-offer-contents">
-                                        <h2>UP TO <br/>40 % OFF</h2>
-                                        <h4>Delicious cake</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing, sed do
-                                        </p>
-                                        <button>SHOP NOW</button>
-                                    </div>
-                                </div>
-                                <div className="trending-offers">
-                                    <img className='offer-img' src={offerfive} alt=''></img>
-                                    <div className="tending-offer-contents">
-                                        <h2>UP TO <br/>40 % OFF</h2>
-                                        <h4>Delicious cake</h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing, sed do
-                                        </p>
-                                        <button>SHOP NOW</button>
-                                    </div>
-                                </div>
-                                {/* </Slider> */}
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Sliderhome/>
             </div>
         </div>
     )
