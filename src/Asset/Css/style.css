@@ -150,7 +150,6 @@ ul {
 .react-multi-carousel-dot button:hover {
     background: #1B85D7 !important;
 }
-
 label {
     color: #666;
     font-size: 14px;
@@ -1201,6 +1200,7 @@ footer {
 
 .social-media {
     display: flex;
+    cursor: pointer;
 }
 
 .social-media .fa {
