@@ -142,7 +142,6 @@ function Deliveryaddress() {
                                         <p>Phone:9100000000</p>
                                         <p style={{
                                             color: "#764646",
-                                            fontFamily: "Montserrat",
                                             fontSize: "12px",
                                             fontStyle: "normal",
                                             fontWeight: "500",
