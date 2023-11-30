@@ -34,24 +34,37 @@ function Shippingaddress() {
                         <div className="shipping-address">
                             <h2>SHIPPING ADDRESS</h2>
                             <form>
-                                <div className="name">
-                                    <div className="first-name">
+                                <div className="name row">
+                                    <div className="col-12 col-md-6"> <div className="first-name">
                                         <label>Firstname</label>
                                         <input type='name' name='' value=''></input>
+                                    </div></div>
+                                    <div className="col-12 col-md-6">
+                                        <div className="last-name">
+                                            <label>Lastname</label>
+                                            <input type='name' name='' value=''></input>
+                                        </div>
                                     </div>
-                                    <div className="last-name">
-                                        <label>Lastname</label>
-                                        <input type='name' name='' value=''></input>
+
+
+                                </div>
+                                <div className="row">
+                                    <div className="address-1">
+                                        <div className="col-12">
+                                            <label>Address (line 1)</label>
+                                            <input type='name' name='' value=''></input>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="address-1">
-                                    <label>Address (line 1)</label>
-                                    <input type='name' name='' value=''></input>
+                                <div className="row">
+                                    <div className="address-2">
+                                        <div className="col-12">
+                                            <label>Address (line 2)</label>
+                                            <input type='name' name='' value=''></input>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="address-2">
-                                    <label>Address (line 2)</label>
-                                    <input type='name' name='' value=''></input>
-                                </div>
+
                                 <div className="name">
                                     <div className="first-name">
                                         <label>Phone Number</label>
@@ -81,14 +94,18 @@ function Shippingaddress() {
                                     <label>Address (line 2)</label>
                                     <input type='name' name='' value=''></input>
                                 </div>
-                                <div className="name">
+                                <div className="name row">
+                                    <div className="col-12 col-md-6">
                                     <div className="first-name">
                                         <label>Pincode</label>
                                         <input type='name' name='' value=''></input>
                                     </div>
+                                    </div>
+                                    <div className="col-12 col-md-6">
                                     <div className="last-name">
                                         <label>City</label>
                                         <input type='name' name='' value=''></input>
+                                    </div>
                                     </div>
                                 </div>
                             </form>
