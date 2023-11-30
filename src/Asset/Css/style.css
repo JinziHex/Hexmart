@@ -46,7 +46,6 @@ ul {
 
 #menu .menu-content a {
     color: #000;
-    font-family: Titillium Web;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -739,7 +738,6 @@ input[type=radio]:focus {
 
 .inner-contents h3 {
     color: #FFF;
-    font-family: Titillium Web;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -752,7 +750,6 @@ input[type=radio]:focus {
 .inner-contents p {
     color: #FFF;
     font-size: 14px;
-    font-family: Titillium Web;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -803,7 +800,6 @@ input[type=radio]:focus {
 
 .courosal-main h3 {
     color: #025391;
-    font-family: Titillium Web;
     font-size: 24px;
     font-style: normal;
     font-weight: bold;
@@ -858,7 +854,6 @@ input[type=radio]:focus {
 
 .glass h4 {
     color: #001E35;
-    font-family: Titillium Web;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -877,7 +872,6 @@ input[type=radio]:focus {
 
 .price h5 {
     color: #AD0101;
-    font-family: Titillium Web;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -923,7 +917,6 @@ input[type=radio]:focus {
     box-shadow: 0px 4px 5px -3px #4AB6FF;
     border: none;
     color: #FFF;
-    font-family: Titillium Web;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -1036,7 +1029,6 @@ input[type=radio]:focus {
 
 .trending-price h5 {
     color: #AD0101;
-    font-family: Titillium Web;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -1046,7 +1038,6 @@ input[type=radio]:focus {
 
 .trending-price h6 {
     color: #E2DFDF;
-    font-family: Titillium Web;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -1334,8 +1325,7 @@ footer {
     font-style: normal;
     font-weight: 600;
     line-height: 1.8;
-    margin-bottom: 10px;
-    /* margin-top: 25px; */
+    margin: 10px 0;
     text-align: center;
 }
 
@@ -1376,7 +1366,6 @@ footer {
     border-radius: 10px;
     background: #0370C4;
     color: #FFF;
-    font-family: Titillium Web;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -1503,7 +1492,6 @@ footer {
 
 .listening-content-inner .heading .name {
     color: #1F394D;
-    font-family: Titillium Web;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -1513,7 +1501,6 @@ footer {
 
 .listening-content-inner form label {
     color: #000;
-    font-family: Titillium Web;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1544,7 +1531,6 @@ footer {
 
 .price {
     color: #000;
-    font-family: Titillium Web;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -1553,7 +1539,6 @@ footer {
 
 .amount {
     color: #000;
-    font-family: Titillium Web;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -1570,7 +1555,6 @@ footer {
 
 .filter {
     color: #000;
-    font-family: Titillium Web;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -1593,7 +1577,6 @@ footer {
 
 .pagination .active {
     color: #FFF;
-    font-family: Titillium Web;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -1610,7 +1593,6 @@ footer {
 
 .pagination .inactive {
     color: #665D5D;
-    font-family: Titillium Web;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -1699,7 +1681,6 @@ footer {
 
 .rupee h5 {
     color: #AD0101;
-    font-family: Titillium Web;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
@@ -1837,7 +1818,6 @@ footer {
 
 .review-inner .customer-rating h4 {
     color: #000;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -1869,7 +1849,6 @@ footer {
 .rating-product {
     color: rgba(17, 97, 158, 0.99);
     text-align: center;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -1903,7 +1882,6 @@ footer {
 
 .person-review .heading h4 {
     color: #444;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -1913,7 +1891,6 @@ footer {
 
 .person-review .heading h4 span {
     color: #999;
-    font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -1923,7 +1900,6 @@ footer {
 .person-review p {
     width: 530px;
     color: #7F7F7F;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -1934,7 +1910,6 @@ footer {
 
 .customer-review h4 {
     color: #000;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -1962,7 +1937,6 @@ footer {
     border-radius: 10px;
     background: #0370C4;
     color: #FFF;
-    font-family: Titillium Web;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -1996,7 +1970,6 @@ footer {
 
 .shopping-cart {
     color: #212121;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -2035,7 +2008,6 @@ footer {
 
 .delivery-detail h4 {
     color: #000;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -2045,7 +2017,6 @@ footer {
 
 .delivery-detail h4 .free {
     color: #0AA02B;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -2055,7 +2026,6 @@ footer {
 
 .delivery-detail h5 {
     color: #BBB;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -2090,7 +2060,6 @@ footer {
     background: transparent;
     border: none;
     color: #000;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -2115,7 +2084,6 @@ footer {
 
 .content-price p {
     color: #3C3939;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -2124,7 +2092,6 @@ footer {
 
 .price-details div {
     color: #000;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -2134,7 +2101,6 @@ footer {
 
 .totalamount {
     color: #000;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -2143,7 +2109,6 @@ footer {
 
 .placeorder {
     color: #FFF;
-    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -2157,7 +2122,6 @@ footer {
 
 .Shopping {
     color: rgba(15, 142, 239, 0.63);
-    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -2171,7 +2135,6 @@ footer {
 
 .shopping-cartt {
     color: #212121;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -2262,20 +2225,20 @@ footer {
 
 .active.progressbar .inner-h4 h4 {
     color: #FFF;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 0;
 }
 
 .advantage .inner-h4 h4 {
     color: #0C5C9A;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 0;
 }
 
 .delivery-address {
@@ -2285,18 +2248,16 @@ footer {
 
 .shipping-address {
     width: 50%;
-    padding: 10px 30px 0 0;
+    padding: 10px;
 }
 
 .billing-address {
     width: 50%;
-    padding: 10px 0px 0 30px;
-
+    padding: 10px;
 }
 
 .shipping-address h2 {
     color: #0C5C9A;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -2305,7 +2266,6 @@ footer {
 
 .billing-address h2 {
     color: #0C5C9A;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -2315,17 +2275,16 @@ footer {
 .shipping-address .name input {
     display: block;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid #E7E8EA;
     background: #FFF;
-    padding: 15px 10px;
+    padding: 10px 10px;
     margin: 5px 0 20px 0;
     outline: 0;
 }
 
 .shipping-address .name label {
     color: #767272;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -2336,17 +2295,16 @@ footer {
 .address-1 input {
     display: block;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid #E7E8EA;
     background: #FFF;
-    padding: 15px 10px;
+    padding: 10px 10px;
     margin: 5px 0 20px 0;
     outline: 0;
 }
 
 .address-1 label {
     color: #767272;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -2357,17 +2315,16 @@ footer {
 .address-2 input {
     display: block;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid #E7E8EA;
     background: #FFF;
-    padding: 15px 10px;
-    margin: 5px 0 10px 0;
+    padding: 10px 10px;
+    margin: 5px 0 20px 0;
     outline: 0;
 }
 
 .address-2 label {
     color: #767272;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -2377,13 +2334,13 @@ footer {
 
 .billing-address .name input {
     display: block;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 5px;
     border: 1px solid #E7E8EA;
     background: #FFF;
-    padding: 15px 10px;
+    padding: 10px 10px;
     margin: 5px 0 20px 0;
     outline: 0;
-    width: 100%;
 }
 
 .billing-address .name label {
@@ -2725,7 +2682,6 @@ footer {
 
 .place-order p span {
     color: #000;
-    font-family: Titillium Web;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -2930,7 +2886,7 @@ footer {
     border-left: 0;
     border-right: 0;
     color: rgba(0, 0, 0, 0.80);
-   font-size: 14px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -3403,7 +3359,6 @@ footer {
     border-radius: 10px;
     border: 1px solid #0370C4;
     color: #0370C4;
-    font-family: Titillium Web;
     font-size: 15px;
     font-style: normal;
     font-weight: 700;

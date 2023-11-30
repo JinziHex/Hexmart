@@ -12,17 +12,20 @@ function Shippingaddress() {
                         <div className="advantages-shipping">
                             <div className="active progressbar">
                                 <div className="inner-h4">
-                                    <h4>SHIPPING ADDRESS</h4>
+                                    <h4 className='d-none d-lg-block'>SHIPPING ADDRESS</h4>
+                                    <h4><i class="fa-solid fa-location-dot d-block d-lg-none" style={{color: "#fff",objectFit:"cover"}}></i></h4>
                                 </div>
                             </div>
                             <div className="advantage progressbar">
                                 <div className="inner-h4">
-                                    <h4>PAYMENT</h4>
+                                    <h4 className='d-none d-lg-block'>PAYMENT</h4>
+                                    <h4><i class="fa-solid fa-indian-rupee-sign d-block d-lg-none" style={{color: "#fff",objectFit:"cover"}}></i></h4>
                                 </div>
                             </div>
                             <div className="advantage">
                                 <div className="inner-h4">
-                                    <h4>CONFIRMATION</h4>
+                                    <h4 className='d-none d-lg-block'>CONFIRMATION</h4>
+                                    <h4><i class="fa-solid fa-check d-block d-lg-none" style={{color: "#fff",objectFit:"cover"}}></i></h4>
                                 </div>
                             </div>
                         </div>
@@ -33,6 +36,7 @@ function Shippingaddress() {
                     <div className="delivery-address">
                         <div className="shipping-address">
                             <h2>SHIPPING ADDRESS</h2>
+                            <h4><i class="fa-solid fa-location-dot d-block d-md-none" style={{color: "#fff"}}></i></h4>
                             <form>
                                 <div className="name row">
                                     <div className="col-12 col-md-6"> <div className="first-name">
