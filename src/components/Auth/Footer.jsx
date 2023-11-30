@@ -88,12 +88,6 @@ function Footer() {
                                             <i class="fa fa-instagram" aria-hidden="true" style={{ color: "#fafcff", }}></i>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div className="button-div-footer">
-                                            <input type='email' className='footer-email' placeholder='Newsletter E-mail adress'></input>
-                                            <button type="button" className="btn btn-primary btn-block mb-4">SUBSCRIBE</button>
-                                        </div>
-                                    </li>
                                 </ul>
                             </div>
                         </div>

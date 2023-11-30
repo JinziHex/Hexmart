@@ -14,6 +14,7 @@ import { faPhone, faLocationDot, faClock, faAngleRight } from '@fortawesome/free
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import { useState } from 'react';
+import { Navbar, Container, Nav, NavDropdown, Offcanvas, Form, Button } from 'react-bootstrap';
 
 const style = {
   position: 'absolute',
@@ -40,7 +41,7 @@ function Header() {
 
   return (
     <div>
-      <div className="header-main">
+      <div className="header-main d-none d-lg-block">
         {/* Top header */}
         <div className="top-header-background">
           <div className="header-container">
@@ -262,6 +263,227 @@ function Header() {
           </div>
         </div >
       </div >
+      {/* header-responsive-design */}
+      <div className="header-resonsive-main d-block d-lg-none" style={{ borderBottom: "1px solid #2270AD", paddingBottom: "10px" }}>
+        <div className="header-main">
+          <div className="top-header-background">
+            <div className="header-container">
+              <div className="top-header">
+                <div className="top-header-left">
+                  <div className='top-header-left-sections'>
+                    <div className="country-selection">
+                      <a href=""><img src={countrylogo} alt=''></img></a>
+                      <select class="select">
+                        <option selected>English</option>
+                        <option value="1">Chinese</option>
+                        <option value="2">French</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div className="top-header-right">
+                  <div className='top-header-right-sections'>
+                    <div className="contact-info">
+                      <FontAwesomeIcon icon={faPhone} style={{ color: "#ffffff", marginRight: "20px" }} />
+                    </div>
+                    <div className="location">
+                      <FontAwesomeIcon onClick={handleOpen} icon={faLocationDot} style={{ color: "#f7f7f8", }} />
+                      <Modal
+                        open={open}
+                        onClose={handleClose}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                      >
+                        <Box sx={style}>
+                          <div className="row login-row-popup">
+                            <div className="col-12 col-md-6">
+                              <img className='loginimg' src={loginimg}></img>
+                            </div>
+                            <div className="col-12 col-md-6 login-div-parent">
+                              <div className="login-div-popup">
+                                <div className="wrapper">
+                                  <div className='forgotpassword-head-popup'>Choose Address</div>
+                                  <div className="wrapper">
+                                    <form>
+                                      <div className="form-outline mb-4">
+                                        <div className="popup-contents">
+                                          <div className="select-popup">
+                                            <label><FontAwesomeIcon icon={faLocationDot} /></label>
+                                            <select id="city" name="city" class="form-select">
+                                              <option value="">Choose City</option>
+                                              <option value="Alipur">Alipur</option>
+                                              <option value="Bawana">Bawana</option>
+                                              <option value="Central Delhi">Central Delhi</option>
+                                              <option value="Delhi">Delhi</option>
+                                            </select>
+                                          </div>
+
+                                          <div className="select-popup">
+                                            <label><FontAwesomeIcon icon={faLocationDot} /></label>
+                                            <select id="city" name="city" class="form-select">
+                                              <option value="">Delivery Location</option>
+                                              <option value="Alipur">Alipur</option>
+                                              <option value="Bawana">Bawana</option>
+                                              <option value="Central Delhi">Central Delhi</option>
+                                              <option value="Delhi">Delhi</option>
+                                            </select>
+                                          </div>
+
+                                          <div className="select-popup">
+                                            <label><FontAwesomeIcon icon={faClock} /></label>
+                                            <select id="city" name="city" class="form-select">
+                                              <option value="">Choose Timeslot</option>
+                                              <option value="Alipur">Alipur</option>
+                                              <option value="Bawana">Bawana</option>
+                                              <option value="Central Delhi">Central Delhi</option>
+                                              <option value="Delhi">Delhi</option>
+                                            </select>
+                                          </div>
+                                          <div className="popup-button">
+                                            <input type='submit'></input>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </Box>
+                      </Modal>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="middle-header">
+          <div className="header-container">
+            <div className="row" style={{ alignItems: "center" }}>
+              <div className="col-2" style={{ paddingLeft: "0", display: "flex", justifyContent: "flex-start" }}>
+                {[false].map((expand) => (
+                  <Navbar key={expand} expand={expand} className="bg-body-tertiary">
+                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+                    <Navbar.Offcanvas
+                      id={`offcanvasNavbar-expand-${expand}`}
+                      aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+                      placement="end"
+                    >
+                      <Offcanvas.Header closeButton>
+                        <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                        </Offcanvas.Title>
+                      </Offcanvas.Header>
+                      <Offcanvas.Body>
+                        <Nav className="justify-content-end flex-grow-1 pe-3">
+                          <Nav.Link href="#action1">BEST SELLERS</Nav.Link>
+                          <Nav.Link href="#action2">REGISTER AS VENDOR</Nav.Link>
+                          <Nav.Link href="#action2">TODAYS DEALS</Nav.Link>
+                          <NavDropdown
+                            title="ALL CATEGORIES"
+                            id={`offcanvasNavbarDropdown-expand-${expand}`}
+                          >
+                            <NavDropdown.Item href="#action3">
+                              <div className="menu-inner">
+                                <div className="menu-content">
+                                  <a href="" style={{ color: "#000", textDecoration: "none" }}>FOOD CUPBOARD</a>
+                                </div>
+                                <div className="menu-icon">
+                                  <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0" }} />
+                                </div>
+                              </div>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action3">
+                              <div className="menu-inner">
+                                <div className="menu-content">
+                                  <a href="" style={{ color: "#000", textDecoration: "none" }}>HEALTH & BEAUTY</a>
+                                </div>
+                                <div className="menu-icon">
+                                  <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0" }} />
+                                </div>
+                              </div>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action3">
+                              <div className="menu-inner">
+                                <div className="menu-content">
+                                  <a href="" style={{ color: "#000", textDecoration: "none" }}>HOUSEHOLD CARE</a>
+                                </div>
+                                <div className="menu-icon">
+                                  <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0" }} />
+                                </div>
+                              </div>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action3">
+                              <div className="menu-inner">
+                                <div className="menu-content">
+                                  <a href="" style={{ color: "#000", textDecoration: "none" }}>FRESH FOOD</a>
+                                </div>
+                                <div className="menu-icon">
+                                  <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0" }} />
+                                </div>
+                              </div>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action3">
+                              <div className="menu-inner">
+                                <div className="menu-content">
+                                  <a href="" style={{ color: "#000", textDecoration: "none" }}>BABY CARE</a>
+                                </div>
+                                <div className="menu-icon">
+                                  <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0" }} />
+                                </div>
+                              </div>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action3">
+                              <div className="menu-inner">
+                                <div className="menu-content">
+                                  <a href="" style={{ color: "#000", textDecoration: "none" }}>STATIONERY & OFFICE SUPPLIES</a>
+                                </div>
+                                <div className="menu-icon">
+                                  <FontAwesomeIcon icon={faAngleRight} style={{ color: "#E0E0E0" }} />
+                                </div>
+                              </div>
+                            </NavDropdown.Item>
+                          </NavDropdown>
+                        </Nav>
+                      </Offcanvas.Body>
+                    </Navbar.Offcanvas>
+                  </Navbar>
+                ))}
+              </div>
+              <div className="col-6" style={{ display: "flex", justifyContent: "flex-end" }}><img className='respo-logo' src={logo}></img></div>
+              <div className="col-4 responsive-user" style={{ justifyContent: "flex-end" }}>
+
+                <div class="upper-menu-cart" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                  <img src={user} style={{ width: "100%", maxWidth: "12px", marginRight: "10px" }}></img>
+                  <ul>
+                    <li><a href="">
+                      <a href=""><div class="add">4</div><img src={likes} alt=''></img></a>
+
+                    </a>
+                    </li>
+                    <li><a href="">
+                      <a href=""><div class="add">3</div><img src={cart} alt=''></img></a>
+                    </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="header-container">
+          <div className="search">
+            <form action="">
+              <input type="text" placeholder='Search for product ' name="search"></input>
+              <button type="submit"><img className='search-button' src={search}></img></button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+      {/* header-responsive-design : end*/}
+
     </div >
   )
 }

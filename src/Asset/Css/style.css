@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Montserrat;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -67,8 +67,8 @@ ul {
 
 .container {
     display: block;
-    width: 90%;
-    max-width: 1300px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -604,15 +604,16 @@ input[type=radio]:focus {
     background-color: #e81211 !important;
     position: absolute;
     color: white;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    right: -10px;
-    top: -9px;
-    font-size: 8px;
+    right: -6px;
+    top: -4px;
+    font-size: 7px;
+    line-height: 1.3;
 }
 
 
@@ -850,7 +851,8 @@ input[type=radio]:focus {
     width: 180px;
     height: auto;
     position: absolute;
-    left: 30px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 23px;
 }
 
@@ -952,7 +954,6 @@ input[type=radio]:focus {
 
 .trending-product h3 {
     color: #025391;
-    font-family: Montserrat;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -1018,7 +1019,6 @@ input[type=radio]:focus {
 
 .trending-contents .price h5 {
     color: #000;
-    font-family: Montserrat;
     font-size: 13px;
     font-style: normal;
     font-weight: 600;
@@ -1078,7 +1078,6 @@ input[type=radio]:focus {
     border-radius: 50%;
     background-color: #50B165;
     color: #FFF;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -1099,14 +1098,14 @@ input[type=radio]:focus {
 
 .trending-products-inner a img {
     object-fit: contain;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: auto;
 }
 
 .trending-brands a img {
     object-fit: contain;
-    width: 200px;
-    height: 276px;
+    width: 170px;
+    height: auto;
 }
 
 .favorites {
@@ -1145,8 +1144,7 @@ footer {
 
 .footer-contents ul li h3 {
     color: #FFF;
-    font-family: Montserrat;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.6;
@@ -1155,29 +1153,16 @@ footer {
 
 .footer-contents ul li h4 {
     color: #FFF;
-    font-family: Montserrat;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
 
-/* .footer-contents ul li h3::after {
-    content: "";
-    position: absolute;
-    background: #00AFFF;
-    width: 135px;
-    height: 2px;
-    bottom: -7px;
-    left: 0;
-} */
-footer {
-    /* padding-top: 60px; */
-}
 
 .footer-contents ul li {
     color: #FFF;
-    font-family: Montserrat;
+    font-size: 14px;
     padding: 8px;
 }
 
@@ -1230,13 +1215,11 @@ footer {
     border: none;
     padding: 10px;
     color: rgba(15, 15, 15, 0.08);
-    font-family: Montserrat;
     font-size: 12px;
 }
 
 .footer-link p {
     color: #FFF;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -1247,7 +1230,6 @@ footer {
 
 .footer-link p span {
     color: #2391E7;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -1260,7 +1242,6 @@ footer {
 
 .tending-offer-contents h2 {
     color: #FFF;
-    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -1272,7 +1253,6 @@ footer {
 .tending-offer-contents h4 {
     margin-top: 0px;
     color: #FFF;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -1281,7 +1261,6 @@ footer {
 
 .tending-offer-contents p {
     color: #FFF;
-    font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -1290,7 +1269,6 @@ footer {
 
 .tending-offer-contents button {
     color: #000;
-    font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
@@ -1371,7 +1349,6 @@ footer {
     border-radius: 10px;
     padding-left: 23px;
     color: #C5C5C5;
-    font-family: Montserrat;
     font-size: 10px;
     font-style: normal;
     font-weight: 500;
@@ -1419,7 +1396,6 @@ footer {
 
 .listing-categories {
     color: #025391;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -1430,7 +1406,6 @@ footer {
 
 .listing-categories .active {
     color: #025391;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -1706,7 +1681,6 @@ footer {
 
 .product-right-contents .heading {
     color: #000;
-    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -1734,7 +1708,6 @@ footer {
 
 .stock-details h5 {
     color: #000;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -1745,7 +1718,6 @@ footer {
 
 .stock-details h5 span {
     color: #0CA11B;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -1760,7 +1732,6 @@ footer {
 
 .product-code h5 {
     color: #000;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1770,7 +1741,6 @@ footer {
 
 .product-code h5 span {
     color: #000;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1784,7 +1754,6 @@ footer {
 
 .color h5 {
     color: #000;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -1845,7 +1814,6 @@ footer {
 .description-main p {
     color: #000;
     text-align: justify;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -2329,7 +2297,7 @@ footer {
 .shipping-address h2 {
     color: #0C5C9A;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -2338,28 +2306,15 @@ footer {
 .billing-address h2 {
     color: #0C5C9A;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
-.shipping-address .name {
-    display: flex;
-    width: 100%;
-}
-
-.shipping-address .first-name {
-    width: 50%;
-}
-
-.shipping-address .last-name {
-    width: 50%;
-}
-
 .shipping-address .name input {
     display: block;
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
     border: 1px solid #E7E8EA;
     background: #FFF;
@@ -2380,7 +2335,7 @@ footer {
 
 .address-1 input {
     display: block;
-    width: 95%;
+    width: 100%;
     border-radius: 10px;
     border: 1px solid #E7E8EA;
     background: #FFF;
@@ -2401,7 +2356,7 @@ footer {
 
 .address-2 input {
     display: block;
-    width: 95%;
+    width: 100%;
     border-radius: 10px;
     border: 1px solid #E7E8EA;
     background: #FFF;
@@ -2420,33 +2375,19 @@ footer {
     margin-top: 5px;
 }
 
-.billing-address .name {
-    display: flex;
-    width: 100%;
-}
-
-.billing-address .first-name {
-    width: 50%;
-}
-
-.billing-address .last-name {
-    width: 50%;
-}
-
 .billing-address .name input {
     display: block;
-    width: 90%;
     border-radius: 10px;
     border: 1px solid #E7E8EA;
     background: #FFF;
     padding: 15px 10px;
     margin: 5px 0 20px 0;
     outline: 0;
+    width: 100%;
 }
 
 .billing-address .name label {
     color: #767272;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -2464,13 +2405,20 @@ footer {
     background: #0F8EEF;
     border: none;
     color: #FFF;
-    font-family: Montserrat;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding: 20px 25px;
-    margin: 10px 20px 35px
+    padding: 15px 25px;
+    margin: 10px 20px 35px;
+    border-radius: 5px;
+    border: 1px solid #0F8EEF;
+}
+
+.submit-button button:hover {
+    background: transparent;
+    border: 1px solid #0F8EEF;
+    color: #0F8EEF;
 }
 
 .cardtype {
@@ -2482,7 +2430,6 @@ footer {
 
 .cardtype h2 {
     color: #0C5C9A;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -2523,7 +2470,6 @@ footer {
 .checkbox label {
     padding-left: 0;
     color: #767272;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -2545,7 +2491,6 @@ footer {
 
 .payment-method h2 {
     color: #0C5C9A;
-    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -2578,7 +2523,6 @@ footer {
 
 .payment-method .name label {
     color: #767272;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -2671,7 +2615,6 @@ footer {
 
 .your-information h2 {
     color: #0C5C9A;
-    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -2680,7 +2623,6 @@ footer {
 
 .shippingaddress h2 {
     color: #0C5C9A;
-    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -2689,7 +2631,6 @@ footer {
 
 .your-information button {
     color: #0F8EEF;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -2702,7 +2643,6 @@ footer {
 
 .shippingaddress button {
     color: #0F8EEF;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -2727,7 +2667,6 @@ footer {
 .delivery-address-name h3 {
     text-transform: capitalize;
     color: #000;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -2736,7 +2675,6 @@ footer {
 
 .delivery-address-name h4 {
     color: #000;
-    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -2745,7 +2683,6 @@ footer {
 
 .delivery-address-name.address h3 {
     color: #504F4F;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -2770,7 +2707,6 @@ footer {
     background: #0F8EEF;
     border: none;
     color: #FFF;
-    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -2781,7 +2717,6 @@ footer {
 
 .place-order p {
     color: #000;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -2816,7 +2751,6 @@ footer {
 
 .edit-profile-h4 h4 {
     color: #0C5C9A;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -2856,7 +2790,6 @@ footer {
 .editprofile-inner .user-info p {
     color: #000;
     text-align: left;
-    font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -2945,7 +2878,6 @@ footer {
 
 .menu-name {
     color: #000;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -2978,7 +2910,6 @@ footer {
 .edit-profile-right-content .first-name label {
     color: rgba(0, 0, 0, 0.80);
     text-align: right;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -2999,8 +2930,7 @@ footer {
     border-left: 0;
     border-right: 0;
     color: rgba(0, 0, 0, 0.80);
-    font-family: Montserrat;
-    font-size: 14px;
+   font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -3013,7 +2943,6 @@ footer {
     border: none;
     height: 50px;
     color: #FFF;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -3026,7 +2955,6 @@ footer {
     margin-left: 30px;
     margin-bottom: 10px;
     color: #000;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -3055,7 +2983,6 @@ footer {
 .order-placed {
     color: #178110;
     text-align: center;
-    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -3072,7 +2999,6 @@ footer {
 
 .order-confirmation {
     color: rgba(0, 0, 0, 0.80);
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -3089,7 +3015,6 @@ footer {
     justify-content: center;
     align-items: center;
     color: #FFF;
-    font-family: Montserrat;
     font-size: 17px;
     font-style: normal;
     font-weight: 700;
@@ -3131,7 +3056,6 @@ footer {
 
 .adress-details option {
     text-align: left;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -3165,7 +3089,6 @@ footer {
 
 .edit-profile-right .delivery-addresss .delivery-address-name .name {
     color: #000;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -3174,7 +3097,6 @@ footer {
 
 .edit-profile-right .delivery-addresss .delivery-address-name .button button {
     color: #FFF;
-    font-family: Montserrat;
     font-size: 10px;
     font-style: normal;
     font-weight: 600;
@@ -3203,7 +3125,6 @@ footer {
     border: 0;
     background: transparent;
     color: #0085FF;
-    font-family: Montserrat;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -3214,8 +3135,6 @@ footer {
     border: 0;
     background: transparent;
     color: #CC0B0B;
-    ;
-    font-family: Montserrat;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -3236,7 +3155,6 @@ footer {
 
 .delivery-page-address p {
     color: #2B2929;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -3247,7 +3165,6 @@ footer {
 .add-new-address {
     border: none;
     color: #FFF;
-    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -3265,7 +3182,6 @@ footer {
 
 .popup-main .h3 {
     color: #0370C4;
-    font-family: Montserrat;
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
@@ -3276,7 +3192,6 @@ footer {
 
 .popup-main p {
     color: #3E3E3E;
-    font-family: Montserrat;
     font-size: 18 px;
     font-style: normal;
     font-weight: 500;
@@ -3292,7 +3207,6 @@ footer {
 
 .popup-buttons .cancel {
     color: #A1A1A1;
-    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -3305,7 +3219,6 @@ footer {
 
 .popup-buttons .logout {
     color: #ffffff;
-    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -3348,7 +3261,7 @@ footer {
 
 .order-details-inner h4 {
     color: #000;
-    font-family: Montserrat;
+
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -3385,7 +3298,6 @@ footer {
 .sales-1 p {
     color: #000;
     text-align: right;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -3396,7 +3308,6 @@ footer {
 .sales-2 p {
     color: #000;
     text-align: left;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -3406,7 +3317,6 @@ footer {
 
 .sales-2 .payment-mode {
     color: #000;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
@@ -3415,7 +3325,6 @@ footer {
 
 .total-order h5 {
     color: #000;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
@@ -3424,7 +3333,6 @@ footer {
 
 .qty {
     color: rgba(0, 0, 0, 0.62);
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -3444,7 +3352,6 @@ footer {
 
 .timeline-check div div:nth-child(1) {
     color: #000;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -3453,7 +3360,6 @@ footer {
 
 .timeline-check div div:nth-child(2) {
     color: #938E8E;
-    font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -3565,15 +3471,16 @@ footer {
     flex-shrink: 1;
     flex-basis: 50%;
 }
+
 .orderd-items-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center;
 }
+
 .orderd-items-img span {
     color: #000;
-    font-family: Montserrat;
     font-size: 25px;
     font-style: normal;
     font-weight: 500;
@@ -3601,7 +3508,6 @@ footer {
 
 .delivery-date-inner .delivery-date {
     color: #090909;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -3611,7 +3517,6 @@ footer {
 
 .order-number {
     color: #BBB;
-    font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -3621,7 +3526,6 @@ footer {
 
 .order-id {
     color: #090909;
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -3650,3 +3554,62 @@ footer {
 }
 
 /* Wallet page : End */
+.select:focus-visible {
+    outline: none;
+}
+
+.middle-header .bg-body-tertiary {
+    background-color: transparent !important;
+}
+
+.middle-header .navbar-toggler {
+    border: none;
+    padding: 0 !important;
+}
+
+.middle-header .navbar-toggler:focus-visible {
+    outline: 0 !important;
+}
+
+.middle-header .navbar-toggler-icon {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.middle-header .navbar-toggler-icon:focus-visible {
+    box-shadow: 0 !important;
+}
+
+.middle-header .navbar {
+    margin-bottom: 0 !important;
+}
+
+.offcanvas-body {
+    padding: 10px 30px !important;
+}
+
+.nav-link {
+    font-size: 12px !important;
+    padding: 10px 0 !important;
+    width: 100% !important;
+}
+
+.dropdown-toggle::after {
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-bottom: 0;
+    border-left: 4px solid transparent;
+}
+
+.navbar-nav .dropdown-menu {
+    width: 100%;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.respo-logo {
+    max-width: 150px;
+    width: 100%;
+}
