@@ -22,9 +22,6 @@ function Orderdetails() {
                         <span><FontAwesomeIcon icon={faAngleRight} style={{ color: "#E2DFDF", }} /></span>
                         <a href=''><span className='listing-categories'>ORDER DETAILS</span></a>
                     </div>
-                    <div className="edit-profile-h4">
-                        <h4>Order Details</h4>
-                    </div>
                     <div className="order-details-body">
                         <div className="order-details">
                             <div className="order-details-inner">
@@ -34,32 +31,32 @@ function Orderdetails() {
                                 <div className="person-information-1">
                                     <div className="sales">
                                         <div className="sales-1">
-                                            <p>Sales Consultant:</p>
-                                            <p>Order Number:</p>
-                                            <p>Shipment Number:</p>
-                                            <p>Order Date:</p>
+                                            <p>Sales Consultant</p>
+                                            <p>Order Number</p>
+                                            <p>Shipment Number</p>
+                                            <p>Order Date</p>
                                         </div>
                                         <div className="sales-2">
-                                            <p>Name</p>
-                                            <p style={{ color: "#0F8EEF" }}>561575552442185</p>
-                                            <p style={{ color: "#0F8EEF" }}>3345532561575185</p>
-                                            <p>23-Oct-2023</p>
+                                            <p><span>:</span>Name</p>
+                                            <p style={{ color: "#0F8EEF" }}><span style={{color:"#000"}}>:</span> 561575552442185</p>
+                                            <p style={{ color: "#0F8EEF" }}><span style={{color:"#000"}}>:</span> 3345532561575185</p>
+                                            <p><span>:</span> 23-Oct-2023</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="person-information-1">
                                     <div className="sales">
                                         <div className="sales-1">
-                                            <p>Product Total:</p>
-                                            <p>Delivery Fee:</p>
-                                            <p>Invoice Number:</p>
-                                            <p>Payment Mode:</p>
+                                            <p>Product Total</p>
+                                            <p>Delivery Fee</p>
+                                            <p>Invoice Number</p>
+                                            <p>Payment Mode</p>
                                         </div>
                                         <div className="sales-2">
-                                            <p className='payment-mode'>$ 669</p>
-                                            <p style={{ color: "#0AA02B" }}>FREE<span style={{ color: "#E0DCDC", marginLeft: "10px" }}>$ 30</span></p>
-                                            <p>TA3516223502559</p>
-                                            <p>PREPAID</p>
+                                            <p className='payment-mode'><span>:</span>$ 669</p>
+                                            <p style={{ color: "#0AA02B" }}><span style={{color:"#000"}}>:</span>FREE<span style={{ color: "#E0DCDC", marginLeft: "10px" }}>$ 30</span></p>
+                                            <p><span>:</span>TA3516223502559</p>
+                                            <p><span>:</span>PREPAID</p>
                                         </div>
                                     </div>
                                 </div>
@@ -71,10 +68,10 @@ function Orderdetails() {
                                 <div className="person-information-1">
                                     <div className="sales">
                                         <div className="sales-1">
-                                            <p>Delivery Address :</p>
+                                            <p>Delivery Address </p>
                                         </div>
                                         <div className="sales-2">
-                                            <p>Unit - 12, Upper Basement, Sahya Building,KSITIL Special Economic Zone,Govt. Cyberpark, Nellikkode P.O,Kozhikode, Kerala, India</p>
+                                            <p><span>:</span>Unit - 12, Upper Basement, Sahya Building,KSITIL Special Economic Zone,Govt. Cyberpark, Nellikkode P.O,Kozhikode, Kerala, India</p>
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +123,7 @@ function Orderdetails() {
                                     </div>
                                 </div>
                             </div>
-                            <button className='add-new-address' style={{ margin: "20px 0 0", padding: "20px 20px" }}>BACK TO ORDER HISTORY </button>
+                            <button className='add-new-address' style={{ margin: "20px 0 0", padding: "10px" }}>BACK TO ORDER HISTORY </button>
                         </div>
                         <div className="track-order">
                             <div className="order-details-inner">

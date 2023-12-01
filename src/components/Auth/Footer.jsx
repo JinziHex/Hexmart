@@ -81,11 +81,19 @@ function Footer() {
                                         <h4>FOLLOW US</h4>
                                     </li>
                                     <li>
-                                        <div className="social-media">
-                                            <i class="fa fa-facebook" aria-hidden="true" style={{ color: "#fafcff", }}></i>
-                                            <i class="fa fa-twitter" aria-hidden="true" style={{ color: "#fafcff", }}></i>
-                                            <i class="fa fa-linkedin" aria-hidden="true" style={{ color: "#fafcff", }}></i>
-                                            <i class="fa fa-instagram" aria-hidden="true" style={{ color: "#fafcff", }}></i>
+                                        <div className="row">
+                                            <div className="col-2">
+                                                <i class="fa-brands fa-facebook" style={{ color: "#fff", fontSize: "20px" }}></i>
+                                            </div>
+                                            <div className="col-2">
+                                                <i class="fa-brands fa-square-x-twitter" style={{ color: "#fff", fontSize: "20px" }}></i>
+                                            </div>
+                                            <div className="col-2">
+                                                <i class="fa-brands fa-linkedin" style={{ color: "#fff", fontSize: "20px" }}></i>
+                                            </div>
+                                            <div className="col-2">
+                                                <i class="fa-brands fa-instagram" style={{ color: "#fff", fontSize: "20px" }}></i>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>

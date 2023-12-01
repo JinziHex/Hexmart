@@ -184,10 +184,12 @@
     .search form {
         width: 450px;
     }
-    .active.progressbar .inner-h4 h4{
+
+    .active.progressbar .inner-h4 h4 {
         font-size: 16px;
     }
-    .advantage .inner-h4 h4{
+
+    .advantage .inner-h4 h4 {
         font-size: 16px;
     }
 }
@@ -239,6 +241,7 @@
 
     .delivery-address {
         display: block;
+        padding: 10px 20px;
     }
 
     .shipping-address {
@@ -248,58 +251,212 @@
     .billing-address {
         width: 100%;
     }
-    .popup-button{
+
+    .popup-button {
         text-align: center;
+    }
+
+    .payment-method {
+        padding: 10px 20px;
+    }
+
+    .advantage.progressbar::after {
+        right: -8%;
+    }
+
+    .listing {
+        display: block;
+    }
+
+    .edit-profile-right {
+        padding: 0;
+
+    }
+
+    .edit-menubar {
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .listening-content-left {
+        width: 100%;
+    }
+
+    .editprofile-inner {
+        width: 100%;
+    }
+
+    .edit-menubar {
+        width: 100%;
+    }
+
+    .edit-profile-right-content .first-name button {
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .edit-profile-right-content {
+        padding: 20px 0px 20px 15px;
+    }
+    .editprofile.active {
+        width: 100%;
+    }
+    .order-details-body{
+        display: block;
+    }
+    .listing-categories {
+        font-size: 12px;
+    }
+    .order-details {
+        width: 100%;
+    }
+    .order-details-inner h4 {
+        font-size: 16px;
+    }
+    .person-information-1 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 814px) {
+    .advantage.progressbar::after {
+        right: -11%;
     }
 }
 
 @media (max-width: 767px) {
+    .add-new-address {
+        font-size: 13px;
+    }
+
+    .edit-profile-right h3 {
+        font-size: 18px;
+    }
+
     .shipping-address h2 {
         font-size: 16px;
     }
+
+    .footer-contents ul li h4 {
+        font-size: 14px;
+    }
+
     .advantages-shipping {
         margin: 10px 0;
     }
+
     .shipping-address .name label {
         font-size: 14px;
         margin-top: 5px;
     }
+
     .address-1 label {
         font-size: 14px;
         margin-top: 5px;
     }
+
     .address-2 label {
         font-size: 14px;
     }
+
     .billing-address h2 {
         font-size: 16px;
     }
+
     .billing-address .name label {
         font-size: 14px;
         margin-top: 5px;
     }
+
     .shipping-address .name input {
         margin: 5px 0 10px 0;
     }
+
     .address-2 input {
         margin: 5px 0 10px 0;
     }
+
     .address-1 input {
         margin: 5px 0 10px 0;
     }
+
     .billing-address .name input {
         margin: 5px 0 10px 0;
     }
+
     .submit-button button {
         font-size: 14px;
         padding: 8px 15px;
         margin: auto;
     }
+
     .footer-contents {
         width: 100%;
     }
+
+    .inner-h4 {
+        padding: 10px 0 10px 0;
+    }
+
+    .payment-method h2 {
+        font-size: 14px;
+    }
+
+    .payment-method .name label {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .expiry-date label {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .checkbox label {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .listing {
+        display: block;
+    }
+
+    .edit-profile-right {
+        padding: 0;
+
+    }
+
+    .edit-menubar {
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .listening-content-left {
+        width: 100%;
+    }
+
+    .editprofile-inner {
+        width: 100%;
+    }
+
+    .edit-menubar {
+        width: 100%;
+    }
+
+    .edit-profile-right-content .first-name button {
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .edit-profile-right-content {
+        padding: 20px 0px 20px 15px;
+    }
 }
 
-@media (max-width: 575px) {}
+@media (max-width: 425px) {
+    .advantage.progressbar::after {
+        right: -21%;
+    }
+}
 
 /* Header : end */

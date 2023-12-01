@@ -81,7 +81,7 @@ ul {
 .header-container {
     display: block;
     width: 80%;
-    max-width: 1497px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -623,6 +623,7 @@ input[type=radio]:focus {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .upper-menu-cart ul li {
@@ -1391,6 +1392,15 @@ footer {
     line-height: normal;
     margin-right: 10px;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.order-details-inner h4 {
+    margin-bottom: 0;
 }
 
 .listing-categories .active {
@@ -1409,6 +1419,7 @@ footer {
     margin-top: 20px;
     display: flex;
     width: 100%;
+    align-items: flex-start;
 }
 
 .listening-content-left {
@@ -1983,6 +1994,7 @@ footer {
 
 .added-item-1 {
     display: flex;
+    border-radius: 5px;
 }
 
 .added-item-img {
@@ -2206,7 +2218,7 @@ footer {
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
-    right: -10%;
+    right: -7%;
     top: 0;
     z-index: -1;
 }
@@ -2299,7 +2311,7 @@ footer {
     border: 1px solid #E7E8EA;
     background: #FFF;
     padding: 10px 10px;
-    margin: 5px 0 20px 0;
+    margin: 5px 0 10px 0;
     outline: 0;
 }
 
@@ -2416,12 +2428,16 @@ footer {
 .expiry-dates {
     display: flex;
     align-items: flex-end;
-    width: 100%;
     justify-content: space-between;
 }
 
-.expiry-date {
-    width: 50%;
+.expiry-date label {
+    color: #767272;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
 }
 
 .checkbox label {
@@ -2448,33 +2464,25 @@ footer {
 
 .payment-method h2 {
     color: #0C5C9A;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 5px;
 }
 
 .payment-method .name {
     display: flex;
-    width: 100%;
-}
-
-.payment-method .first-name {
-    width: 50%;
-}
-
-.payment-method .last-name {
-    width: 50%;
 }
 
 .payment-method .name input {
     display: block;
-    width: 90%;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 5px;
     border: 1px solid #E7E8EA;
     background: #FFF;
-    padding: 15px 10px;
-    margin: 5px 0 20px 0;
+    padding: 10px 10px;
+    margin: 5px 0 10px 0;
     outline: 0;
 }
 
@@ -2487,24 +2495,22 @@ footer {
     margin-top: 10px;
 }
 
-.payment-method .name select {
+.payment-method .expiry-dates select {
     display: block;
-    width: 85%;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 5px;
     border: 1px solid #E7E8EA;
     background: #FFF;
-    padding: 15px 10px;
+    padding: 9px 10px;
     margin: 5px 0 20px 0;
     outline: 0;
     color: #aaa;
+    font-size: 14px;
 }
 
 .payment-method .name select option {
     color: #111;
-}
-
-.billing-information {
-    width: 50%;
+    font-size: 14px;
 }
 
 .cardtypes {
@@ -2762,17 +2768,8 @@ footer {
     margin-left: 20px;
 }
 
-.editprofile.active .user-icon img {
-    /* -webkit-filter: opacity(.5) drop-shadow(0 0 0 #1B85D7);
-     filter: opacity(.5) drop-shadow(0 0 0 #1B85D7); */
-}
-
 .editprofile .icon {
     margin-left: 20px;
-}
-
-.editprofile .icon img {
-    display: none;
 }
 
 .editprofile .icon img.orderlocation {
@@ -2792,7 +2789,7 @@ footer {
     content: "";
     width: 6px;
     height: 65px;
-    background: #0d4169;
+    background: #1b85d7;
     top: -9px;
     left: -15px;
 }
@@ -2818,13 +2815,13 @@ footer {
     border-radius: 0 0 10px 10px;
     border: 1px solid #E7E8EA;
     margin-top: 0;
-    height: 500px;
+    height: 327px;
 }
 
 .edit-menubar .editprofile {
     display: flex;
     align-items: center;
-    margin: 15px 0;
+    margin: 5px 0;
     cursor: pointer;
 }
 
@@ -2846,7 +2843,7 @@ footer {
     border-radius: 10px;
     border: 1px solid #ECECEC;
     background: #FFF;
-    width: 497px;
+    width: 100%;
     height: auto;
     padding: 20px 0px 20px 25px;
 }
@@ -2905,10 +2902,38 @@ footer {
     line-height: normal;
     margin: 30px 0 30px 0;
     margin: auto;
+    border-radius: 5px;
+}
+
+.edit-profile-right-content .first-name.datepicker button {
+    background: transparent;
+    color: #757575;
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.edit-profile-right-content .first-name.datepicker input {
+    padding: 0;
+}
+
+.edit-profile-right-content .first-name.datepicker div div div div {
+    border-radius: 0 !important;
+}
+
+.edit-profile-right-content .first-name.datepicker>div {
+    padding-top: 0;
+}
+
+.edit-profile-right-content .first-name.datepicker fieldset {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #E7E8EA;
+    font-size: 14px;
+    width: 95%;
 }
 
 .edit-profile-right h3 {
-    margin-left: 30px;
     margin-bottom: 10px;
     color: #000;
     font-size: 20px;
@@ -2994,6 +3019,42 @@ footer {
     width: 50%;
 }
 
+.country select {
+    display: block;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 20px 10px 20px 0;
+    margin: 0px 0 5px 0;
+    outline: 0;
+    color: #aaa;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.state select {
+    display: block;
+    border: 1px solid #E7E8EA;
+    background: #FFF;
+    padding: 20px 10px 20px 0;
+    margin: 0px 0 5px 0;
+    outline: 0;
+    color: #aaa;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 .state {
     width: 50%;
 }
@@ -3006,8 +3067,8 @@ footer {
     border-right: 0;
     outline: 0;
     border-bottom: 1px solid #ECECEC;
-    padding: 25px 10px 25px 0;
-    color: #000;
+    padding: 25px 10px 15px 0;
+    color: rgba(0, 0, 0, 0.80);
 }
 
 .adress-details option {
@@ -3029,7 +3090,7 @@ footer {
 .edit-profile-right .delivery-addresss {
     border-radius: 10px;
     border: 1px solid #ECECEC;
-    width: 400px;
+    width: 100%;
     margin-bottom: 20px;
     height: auto;
 }
@@ -3051,7 +3112,7 @@ footer {
     line-height: normal;
 }
 
-.edit-profile-right .delivery-addresss .delivery-address-name .button button {
+/* .edit-profile-right .delivery-addresss .delivery-address-name .button button {
     color: #FFF;
     font-size: 10px;
     font-style: normal;
@@ -3061,9 +3122,10 @@ footer {
     border-radius: 10px;
     background: #0370C4;
     padding: 10px 10px;
-    padding: 7px 10px;
+    padding: 7px 0px;
     margin-right: 70px;
-}
+    width: 100%;
+} */
 
 .edit-button-inner-contents {
     border-radius: 10px;
@@ -3121,7 +3183,7 @@ footer {
 .add-new-address {
     border: none;
     color: #FFF;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -3130,6 +3192,7 @@ footer {
     display: block;
     padding: 10px 10px;
     padding: 12px 100px;
+    border-radius: 5px;
 }
 
 .popup-main {
@@ -3213,15 +3276,16 @@ footer {
     background: #F3F3F3;
     padding: 0 20px;
     width: 100%;
+    border-radius: 5px;
 }
 
 .order-details-inner h4 {
     color: #000;
-
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    padding: 5px;
 }
 
 .person-information {
@@ -3243,7 +3307,7 @@ footer {
 }
 
 .sales-1 {
-    width: 50%;
+    width: 40%;
 }
 
 .sales-2 {
@@ -3253,7 +3317,7 @@ footer {
 
 .sales-1 p {
     color: #000;
-    text-align: right;
+    text-align: left;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -3567,4 +3631,25 @@ footer {
 .respo-logo {
     max-width: 150px;
     width: 100%;
+}
+
+.edit-profile-right {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.css-1u23akw-MuiButtonBase-root-MuiPickersDay-root {
+    font-size: 14px !important;
+}
+
+.css-rhmlg1-MuiTypography-root-MuiDayCalendar-weekDayLabel {
+    font-size: 14px !important;
+}
+
+.css-dplwbx-MuiPickersCalendarHeader-label {
+    font-size: 12px !important;
+}
+
+.css-1ghilo0-MuiStack-root {
+    overflow: hidden !important;
 }
