@@ -48,9 +48,6 @@ function Deliveryaddress() {
                         <span><FontAwesomeIcon icon={faAngleRight} style={{ color: "#E2DFDF", }} /></span>
                         <a href=''><span className='listing-categories'>Delivery Address</span></a>
                     </div>
-                    <div className="edit-profile-h4">
-                        <h4>My Account</h4>
-                    </div>
                     <div className="listing-body">
                         <div className="listing">
                             <div className="listening-content-left">
@@ -115,9 +112,9 @@ function Deliveryaddress() {
                                         <div className="name">
                                             Full Name
                                         </div>
-                                        <div className="button">
+                                        {/* <div className="button">
                                             <button>HOME</button>
-                                        </div>
+                                        </div> */}
                                         <div className="edit-button">
                                             <i class="fa fa-ellipsis-v" aria-hidden="true" style={{ cursor: "pointer", position: "relative" }} onClick={clickMenu}></i>
                                         </div>

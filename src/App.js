@@ -40,7 +40,7 @@ function App() {
             <Route path='/myorder' element={<Myorder />}></Route>
             <Route path='/wallet' element={<Wallet />}></Route>
           </Routes>
-        </div>
+        </div> 
       </BrowserRouter>
     </>
   )
