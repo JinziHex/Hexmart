@@ -54,9 +54,6 @@ function Myorder() {
                         <span><FontAwesomeIcon icon={faAngleRight} style={{ color: "#E2DFDF", }} /></span>
                         <a href=''><span className='listing-categories'>My order</span></a>
                     </div>
-                    <div className="edit-profile-h4">
-                        <h4>My Orders</h4>
-                    </div>
                     <div className="listing-body">
                         <div className="listing">
                             <div className="listening-content-left">
@@ -114,9 +111,21 @@ function Myorder() {
                                     </div>
                                 </div>
                             </div>
+
                             <div className="edit-profile-right-order">
-                                <button className='filter' onClick={filterClick}>Filter</button>
-                                {menu && <div className='listening-content-inner order' style={{ height: "410px" }}>
+                                <div className="row">
+                                    <div className="col-10">
+                                        <div className="shipping-address">
+                                            <h2>ORDER LIST</h2>
+                                        </div>
+                                    </div>
+                                    <div className="col-2">
+                                        <button className='filter' onClick={filterClick}>Filter</button>
+                                    </div>
+
+                                </div>
+
+                                {menu && <div className='listening-content-inner order' style={{ height: "auto" }}>
                                     <div className="heading">
                                         <div className="name">order status</div>
                                         <div className="icon"><FontAwesomeIcon icon={faCaretDown} style={{ color: "#E2DFDF" }} /></div>
