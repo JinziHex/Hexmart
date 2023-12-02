@@ -1499,6 +1499,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .listening-content-inner .heading .name {
@@ -2527,10 +2528,10 @@ a {
 }
 
 .shippingaddress {
-    width: 50%;
+    width: 100%;
     padding: 10px 30px 0 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     position: relative;
 }
@@ -2544,10 +2545,10 @@ a {
 }
 
 .your-information {
-    width: 50%;
+    width: 100%;
     padding: 10px 30px 0 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     position: relative;
 }
@@ -2578,18 +2579,20 @@ a {
 
 .your-information h2 {
     color: #0C5C9A;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 20px;
 }
 
 .shippingaddress h2 {
     color: #0C5C9A;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 20px;
 }
 
 .your-information button {
@@ -2630,10 +2633,11 @@ a {
 .delivery-address-name h3 {
     text-transform: capitalize;
     color: #000;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-bottom: 30px;
 }
 
 .delivery-address-name h4 {
@@ -2670,12 +2674,13 @@ a {
     background: #0F8EEF;
     border: none;
     color: #FFF;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     padding: 20px 25px;
-    margin: 10px 20px 35px
+    margin: 10px 20px 35px;
+    border-radius: 5px;
 }
 
 .place-order p {
@@ -3462,13 +3467,12 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 98%;
+    width: 100%;
     border-radius: 10px;
     border: 1px solid #E7E8EA;
     background: #FFF;
     padding: 10px 20px 10px 0px;
     margin-top: 20px;
-    margin-left: 20px;
 }
 
 .orderd-items-img {

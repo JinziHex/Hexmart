@@ -15,20 +15,20 @@ function Paymentmethod() {
                         <div className="advantages-shipping">
                             <div className="advantage progressbar">
                                 <div className="inner-h4">
-                                <h4 className='d-none d-lg-block'>SHIPPING ADDRESS</h4>
-                                    <h4><i class="fa-solid fa-location-dot d-block d-lg-none" style={{color: "#fff",objectFit:"cover"}}></i></h4>
+                                    <h4 className='d-none d-lg-block'>SHIPPING ADDRESS</h4>
+                                    <h4><i class="fa-solid fa-location-dot d-block d-lg-none" style={{ color: "#fff", objectFit: "cover" }}></i></h4>
                                 </div>
                             </div>
                             <div className="active progressbar">
                                 <div className="inner-h4">
-                                <h4 className='d-none d-lg-block'>PAYMENT</h4>
-                                    <h4><i class="fa-solid fa-indian-rupee-sign d-block d-lg-none" style={{color: "#fff",objectFit:"cover"}}></i></h4>
+                                    <h4 className='d-none d-lg-block'>PAYMENT</h4>
+                                    <h4><i class="fa-solid fa-indian-rupee-sign d-block d-lg-none" style={{ color: "#fff", objectFit: "cover" }}></i></h4>
                                 </div>
                             </div>
                             <div className="advantage">
                                 <div className="inner-h4">
-                                <h4 className='d-none d-lg-block'>CONFIRMATION</h4>
-                                    <h4><i class="fa-solid fa-check d-block d-lg-none" style={{color: "#fff",objectFit:"cover"}}></i></h4>
+                                    <h4 className='d-none d-lg-block'>CONFIRMATION</h4>
+                                    <h4><i class="fa-solid fa-check d-block d-lg-none" style={{ color: "#fff", objectFit: "cover" }}></i></h4>
                                 </div>
                             </div>
                         </div>
@@ -41,52 +41,52 @@ function Paymentmethod() {
                         <div className="payment-method">
 
                             <div className="row">                                <div className="col-12 col-lg-6" style={{ padding: "10px" }}>
-                                   
-                                    <div className="billing-information">
-                                        <h2>BILLING INFORMATION</h2>
-                                        <form>
-                                            <div className="row">
-                                                <div className="col-12">
-                                                    <div className="address-1">
-                                                        <label>First Name</label>
-                                                        <input type='name' name='' value=''></input>
-                                                    </div>
-                                                </div>
-                                            </div>
 
-                                            <div className="address-1">
-                                                <label>Second Name </label>
-                                                <input type='name' name='' value=''></input>
-                                            </div>
-                                            <div className="address-2">
-                                                <label>Billing Address</label>
-                                                <input type='name' name='' value=''></input>
-                                            </div>
-                                            <div className="address-2">
-                                                <label>City</label>
-                                                <input type='name' name='' value=''></input>
-                                            </div>
-                                            <div className="name row">
-                                                <div className="col-6">
-                                                    <div className="first-name">
-                                                        <label>Pincode</label>
-                                                        <input type='name' name='' value=''></input>
-                                                    </div>
-                                                </div>
-                                                <div className="col-6">
-                                                    <div className="last-name">
-                                                        <label>Country</label>
-                                                        <input type='email' name='' value=''></input>
-                                                    </div>
+                                <div className="billing-information">
+                                    <h2>BILLING INFORMATION</h2>
+                                    <form>
+                                        <div className="row">
+                                            <div className="col-12">
+                                                <div className="address-1">
+                                                    <label>First Name</label>
+                                                    <input type='name' name='' value=''></input>
                                                 </div>
                                             </div>
-                                            <div className="checkbox">
-                                                <input type="checkbox" name="" value="" style={{ marginTop: "2px", marginBottom: "2px" }} />
-                                                <label>Same As Shipping Address</label>
+                                        </div>
+
+                                        <div className="address-1">
+                                            <label>Second Name </label>
+                                            <input type='name' name='' value=''></input>
+                                        </div>
+                                        <div className="address-2">
+                                            <label>Billing Address</label>
+                                            <input type='name' name='' value=''></input>
+                                        </div>
+                                        <div className="address-2">
+                                            <label>City</label>
+                                            <input type='name' name='' value=''></input>
+                                        </div>
+                                        <div className="name row">
+                                            <div className="col-6">
+                                                <div className="first-name">
+                                                    <label>Pincode</label>
+                                                    <input type='name' name='' value=''></input>
+                                                </div>
                                             </div>
-                                        </form>
-                                    </div>
+                                            <div className="col-6">
+                                                <div className="last-name">
+                                                    <label>Country</label>
+                                                    <input type='email' name='' value=''></input>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="checkbox">
+                                            <input type="checkbox" name="" value="" style={{ marginTop: "2px", marginBottom: "2px" }} />
+                                            <label>Same As Shipping Address</label>
+                                        </div>
+                                    </form>
                                 </div>
+                            </div>
                                 <div className="col-12 col-lg-6" style={{ padding: "10px" }}>
                                     <h2>CREDIT CARD INFORMATION</h2>
                                     <form>
@@ -141,7 +141,7 @@ function Paymentmethod() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="cardtype" style={{margin:"40px 0"}}>
+                                    <div className="cardtype" style={{ margin: "40px 0" }}>
                                         <div className="atmcards">
                                             <h2>Accepted Cards</h2>
                                             <div className="cardtypes">
@@ -156,7 +156,7 @@ function Paymentmethod() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
 
 
