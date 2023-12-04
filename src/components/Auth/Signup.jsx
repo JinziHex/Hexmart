@@ -54,12 +54,13 @@ function Signup() {
                         <label class="form-label" for="form3Example3c">Email</label>
                         <input type="email" id="form3Example3c" class="form-control" />
                     </div>
-                    <div className="form-outline mb-4">
+                    <div className="form-outline mb-4"  style={{position:"relative"}}>
                         <label className="form-label" for="form2Example2">Password</label>
                         <label className='eye-control'>
                             {passwordType === "password" ? <FontAwesomeIcon icon={faEyeSlash} style={{ color: "#9f9f9f", }} onClick={togglePassword} /> : <FontAwesomeIcon icon={faEye} style={{ color: "#9f9f9f" }} onClick={togglePassword} />}
                         </label>
                         <input type={passwordType}
+                      
                             name="password"
                             className='form-control'
                             {...register("password", {
@@ -78,7 +79,7 @@ function Signup() {
                                 },
                             })} />
                     </div>
-                    <div class="form-outline flex-fill mb-0">
+                    <div class="form-outline flex-fill mb-0" style={{position:"relative"}}>
                         <label class="form-label" for="form3Example4cd">Confirm password</label>
                         <label className='eye-control'>
                             {passwordconfirmType === "password" ? <FontAwesomeIcon icon={faEyeSlash} style={{ color: "#9f9f9f", }} onClick={toggleConfirmpassword} /> : <FontAwesomeIcon icon={faEye} style={{ color: "#9f9f9f" }} onClick={toggleConfirmpassword} />}

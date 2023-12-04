@@ -18,6 +18,7 @@ import tomato from '../../Asset/images/listing-1.png'
 import chery from '../../Asset/images/listing-4.png'
 import gooseberry from '../../Asset/images/listing-12.png'
 import onion from '../../Asset/images/listing-2.png'
+import Dropdown from 'react-bootstrap/Dropdown';
 
 
 function Myorder() {
@@ -97,7 +98,7 @@ function Myorder() {
                                         <Box sx={style}>
                                             <div className="popup-main">
                                                 <div className="h3">logout</div>
-                                                <p>Are you sure you want to logout?</p>
+                                                <p style={{fontSize:"14px"}}>Are you sure you want to logout?</p>
                                                 <div className="popup-buttons">
                                                     <button className='cancel'>Cancel</button>
                                                     <button className='logout'>logout</button>
@@ -113,59 +114,64 @@ function Myorder() {
                             </div>
 
                             <div className="edit-profile-right-order">
-                                <div className="row">
-                                    <div className="col-10">
-                                        <div className="shipping-address">
-                                            <h2>ORDER LIST</h2>
+                                <Dropdown>
+
+                                    <div className="row">
+                                        <div className="col-10">
+                                            <div className="shipping-address">
+                                                <h2>ORDER LIST</h2>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="col-2">
-                                        <button className='filter' onClick={filterClick}>Filter</button>
+                                        <Dropdown.Toggle variant="success" id="dropdown-basic" className="col-2">
+                                                <button className='filter'>Filter</button>
+                                        </Dropdown.Toggle>
                                     </div>
 
-                                </div>
-
-                                {menu && <div className='listening-content-inner order' style={{ height: "auto" }}>
-                                    <div className="heading">
-                                        <div className="name">order status</div>
-                                        <div className="icon"><FontAwesomeIcon icon={faCaretDown} style={{ color: "#E2DFDF" }} /></div>
-                                    </div>
-                                    <form>
-                                        <div className="input">
-                                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-                                            <label> Confirmed</label></div>
-                                        <div className="input">
-                                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-                                            <label>Shipped</label>
+                                    <Dropdown.Menu>
+                                    <Dropdown.Item>
+                                        <div className='listening-content-inner order' style={{ height: "auto" }}>
+                                            <div className="heading">
+                                                <div className="name">order status</div>
+                                                <div className="icon"><FontAwesomeIcon icon={faCaretDown} style={{ color: "#E2DFDF" }} /></div>
+                                            </div>
+                                            <form>
+                                                <div className="input">
+                                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+                                                    <label> Confirmed</label></div>
+                                                <div className="input">
+                                                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+                                                    <label>Shipped</label>
+                                                </div>
+                                                <div className="input">
+                                                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+                                                    <label> Out for delivery</label>
+                                                </div>
+                                                <div className="input">
+                                                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+                                                    <label>Delivered</label>
+                                                </div>
+                                            </form>
+                                            <div className="heading">
+                                                <div className="name">Date range</div>
+                                                <div className="icon"><FontAwesomeIcon icon={faCaretDown} style={{ color: "#E2DFDF" }} /></div>
+                                            </div>
+                                            <form>
+                                                <div className="input">
+                                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+                                                    <label>Last 30 Days</label></div>
+                                                <div className="input">
+                                                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+                                                    <label>Last 6 months</label>
+                                                </div>
+                                                <div className="input">
+                                                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+                                                    <label> Last one year</label>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <div className="input">
-                                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-                                            <label> Out for delivery</label>
-                                        </div>
-                                        <div className="input">
-                                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-                                            <label>Delivered</label>
-                                        </div>
-                                    </form>
-                                    <div className="heading">
-                                        <div className="name">Date range</div>
-                                        <div className="icon"><FontAwesomeIcon icon={faCaretDown} style={{ color: "#E2DFDF" }} /></div>
-                                    </div>
-                                    <form>
-                                        <div className="input">
-                                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-                                            <label>Last 30 Days</label></div>
-                                        <div className="input">
-                                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-                                            <label>Last 6 months</label>
-                                        </div>
-                                        <div className="input">
-                                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-                                            <label> Last one year</label>
-                                        </div>
-                                    </form>
-                                </div>}
-
+                                        </Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
                                 <div className="orderd-items">
                                     <div className="orderd-items-img">
                                         <div className="orderd-items-img-inner">

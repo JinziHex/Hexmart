@@ -14,7 +14,7 @@ import Accountinformation from './Pages/Auth/Accountinformation';
 import Deliveryaddress from './Pages/Auth/Deliveryaddress';
 import Orderdetails from './Pages/Auth/Orderdetails';
 import Myorder from './Pages/Auth/Myorder';
-import Wallet from './Pages/Auth/Wallet';
+import Wallett from './Pages/Auth/Wallett';
 
 
 function App() {
@@ -38,7 +38,8 @@ function App() {
             <Route path='/deliveryaddress' element={<Deliveryaddress />}></Route>
             <Route path='/orderdetails' element={<Orderdetails />}></Route>
             <Route path='/myorder' element={<Myorder />}></Route>
-            <Route path='/wallet' element={<Wallet />}></Route>
+            <Route path='/wallett' element={<Wallett />}></Route>
+          
           </Routes>
         </div> 
       </BrowserRouter>

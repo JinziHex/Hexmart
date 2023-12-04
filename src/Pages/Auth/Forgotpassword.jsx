@@ -27,7 +27,7 @@ function Forgotpassword() {
                                             <div className="form-outline mb-4">
                                                 <div className="row button-div">
                                                     <div className="col-7">
-                                                        <a href="#!">Back to login</a>
+                                                        <a href="#!" style={{fontSize:"14px"}}>Back to login</a>
                                                     </div>
                                                     <div className="col-5">
                                                         <button type="button" className="btn btn-primary btn-block mb-4">SEND</button>
