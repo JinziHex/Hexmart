@@ -56,7 +56,7 @@ function Resetpassword() {
                                     <div className='forgotpassword-head'>RESET PASSWORD</div>
                                     <div className="wrapper">
                                         <form>
-                                            <div className="form-outline mb-4">
+                                            <div className="form-outline mb-4" style={{ position: "relative" }}>
                                                 <label className="form-label" for="form2Example2">Password</label>
                                                 <label className='eye-control'>
                                                     {passwordType === "password" ? <FontAwesomeIcon icon={faEyeSlash} style={{ color: "#9f9f9f", }} onClick={togglePassword} /> : <FontAwesomeIcon icon={faEye} style={{ color: "#9f9f9f" }} onClick={togglePassword} />}
@@ -80,7 +80,7 @@ function Resetpassword() {
                                                         },
                                                     })} />
                                             </div>
-                                            <div class="form-outline flex-fill mb-0">
+                                            <div class="form-outline flex-fill mb-0" style={{ position: "relative" }}>
                                                 <label class="form-label" for="form3Example4cd">Confirm password</label>
                                                 <label className='eye-control'>
                                                     {passwordconfirmType === "password" ? <FontAwesomeIcon icon={faEyeSlash} style={{ color: "#9f9f9f", }} onClick={toggleConfirmpassword} /> : <FontAwesomeIcon icon={faEye} style={{ color: "#9f9f9f" }} onClick={toggleConfirmpassword} />}

@@ -38,8 +38,8 @@ function Orderdetails() {
                                         </div>
                                         <div className="sales-2">
                                             <p><span>:</span>Name</p>
-                                            <p style={{ color: "#0F8EEF" }}><span style={{color:"#000"}}>:</span> 561575552442185</p>
-                                            <p style={{ color: "#0F8EEF" }}><span style={{color:"#000"}}>:</span> 3345532561575185</p>
+                                            <p style={{ color: "#0F8EEF" }}><span style={{ color: "#000" }}>:</span> 561575552442185</p>
+                                            <p style={{ color: "#0F8EEF" }}><span style={{ color: "#000" }}>:</span> 3345532561575185</p>
                                             <p><span>:</span> 23-Oct-2023</p>
                                         </div>
                                     </div>
@@ -54,7 +54,7 @@ function Orderdetails() {
                                         </div>
                                         <div className="sales-2">
                                             <p className='payment-mode'><span>:</span>$ 669</p>
-                                            <p style={{ color: "#0AA02B" }}><span style={{color:"#000"}}>:</span>FREE<span style={{ color: "#E0DCDC", marginLeft: "10px" }}>$ 30</span></p>
+                                            <p style={{ color: "#0AA02B" }}><span style={{ color: "#000" }}>:</span>FREE<span style={{ color: "#E0DCDC", marginLeft: "10px" }}>$ 30</span></p>
                                             <p><span>:</span>TA3516223502559</p>
                                             <p><span>:</span>PREPAID</p>
                                         </div>
@@ -80,7 +80,7 @@ function Orderdetails() {
                                 <h4>Products</h4>
                             </div>
 
-                            <div className="added-item-1" style={{ padding: "8px 25px", margin: "10px 0" }}>
+                            <div className="added-item-1" style={{ padding: "8px 25px", margin: "10px 0", display: "flex" }}>
                                 <div className="added-item-img" style={{ width: "15%" }}>
                                     <img src={peach} style={{ width: "85px" }}></img>
                                 </div>
@@ -102,7 +102,7 @@ function Orderdetails() {
                                 </div>
                             </div>
 
-                            <div className="added-item-1" style={{ padding: "8px 25px", margin: "10px 0" }}>
+                            <div className="added-item-1" style={{ padding: "8px 25px", margin: "10px 0", display: "flex" }}>
                                 <div className="added-item-img" style={{ width: "15%" }}>
                                     <img src={listing8} style={{ width: "85px" }}></img>
                                 </div>

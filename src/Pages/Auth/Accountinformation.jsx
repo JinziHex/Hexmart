@@ -87,7 +87,7 @@ function Editprofile() {
                                         <Box sx={style}>
                                             <div className="popup-main">
                                                 <div className="h3">logout</div>
-                                                <p>Are you sure you want to logout?</p>
+                                                <p style={{fontSize:"14px"}}>Are you sure you want to logout?</p>
                                                 <div className="popup-buttons">
                                                     <button className='cancel'>Cancel</button>
                                                     <button className='logout'>logout</button>

@@ -14,6 +14,7 @@ import vector from '../../Asset/images/Vector.svg'
 import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 function Deliveryaddress() {
     const [open, setOpen] = React.useState(false);
@@ -91,7 +92,7 @@ function Deliveryaddress() {
                                         <Box sx={style}>
                                             <div className="popup-main">
                                                 <div className="h3">logout</div>
-                                                <p>Are you sure you want to logout?</p>
+                                                <p style={{fontSize:"14px"}}>Are you sure you want to logout?</p>
                                                 <div className="popup-buttons">
                                                     <button className='cancel'>Cancel</button>
                                                     <button className='logout'>logout</button>
@@ -115,21 +116,31 @@ function Deliveryaddress() {
                                         {/* <div className="button">
                                             <button>HOME</button>
                                         </div> */}
-                                        <div className="edit-button">
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true" style={{ cursor: "pointer", position: "relative" }} onClick={clickMenu}></i>
-                                        </div>
-                                        {menu && <div className="edit-button-inner-contents">
-                                            <div className="button-inner-contents">
-                                                <div className="edit">
-                                                    <img src={edit}></img>
-                                                    <button className='edit'>edit</button>
+
+
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <div className="edit-button">
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true" style={{ cursor: "pointer", position: "relative", color: "#000" }}></i>
                                                 </div>
-                                                <div className="delete">
-                                                    <img src={vector}></img>
-                                                    <button className='delete'>delete</button>
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <div className="edit-button-inner-contents">
+                                                    <div className="button-inner-contents">
+                                                        <div className="edit">
+                                                            <img src={edit}></img>
+                                                            <button className='edit'>edit</button>
+                                                        </div>
+                                                        <div className="delete">
+                                                            <img src={vector}></img>
+                                                            <button className='delete'>delete</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>}
+
+                                            </Dropdown.Menu>
+                                        </Dropdown>
 
                                     </div>
                                     <div className="delivery-page-address">

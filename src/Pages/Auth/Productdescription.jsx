@@ -51,7 +51,7 @@ function Productdescription() {
                             <div className="product-right-contents">
                                 <div className="heading">PEACH</div>
                                 <div className="share-icons">
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <i class="fa-regular fa-heart"  style={{fontSize:"16px"}} aria-hidden="true"></i>
                                     <i class="fa fa-share-alt" aria-hidden="true"></i>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@ function Productdescription() {
 
                         <div className="trending-products">
                             <div className="trending-products-inner">
-                                <div class="favorites"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                <div class="favorites"><i class="fa-regular fa-heart"  style={{fontSize:"16px"}} aria-hidden="true"></i></div>
                                 <div class="trending-offer">52 %</div>
                                 <a><img src={listing1} alt=''></img></a>
                                 <div className="trending-contents">
@@ -144,7 +144,7 @@ function Productdescription() {
                                 </div>
                             </div>
                             <div className="trending-products-inner">
-                                <div class="favorites"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                <div class="favorites"><i class="fa-regular fa-heart"  style={{fontSize:"16px"}} aria-hidden="true"></i></div>
                                 <a><img src={listing3}></img></a>
                                 <div className="trending-contents">
                                     <div className="price">
@@ -164,7 +164,7 @@ function Productdescription() {
                                 </div>
                             </div>
                             <div className="trending-products-inner">
-                                <div class="favorites"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                <div class="favorites"><i class="fa-regular fa-heart" style={{fontSize:"16px"}} aria-hidden="true"></i></div>
                                 <div class="trending-offer">25 %</div>
                                 <a><img src={listing4}></img></a>
                                 <div className="trending-contents">

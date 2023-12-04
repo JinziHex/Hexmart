@@ -30,7 +30,7 @@ function Login() {
                         <label className="form-label" for="form2Example1">Email</label>
                         <input type="email" id="form2Example1" className="form-control" />
                     </div>
-                    <div className="form-outline mb-4">
+                    <div className="form-outline mb-4" style={{position:"relative"}}>
                         <label className="form-label" for="form2Example2">Password</label>
                         <label className='eye-control'>
                             {passwordType === "password" ? <FontAwesomeIcon icon={faEyeSlash} style={{ color: "#9f9f9f", }} onClick={togglePassword} /> : <FontAwesomeIcon icon={faEye} style={{ color: "#9f9f9f" }} onClick={togglePassword} />}
@@ -57,7 +57,7 @@ function Login() {
                     <div className="form-outline mb-4">
                         <div className="row button-div">
                             <div className="col-7">
-                                <a href="#!">Forgot your password?</a>
+                                <a href="#!" style={{fontSize:"14px"}}>Forgot your password?</a>
                             </div>
                             <div className="col-5">
                                 <button type="button" className="btn btn-primary btn-block mb-4">Login</button>

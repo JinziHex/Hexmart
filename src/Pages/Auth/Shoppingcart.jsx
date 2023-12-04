@@ -10,68 +10,72 @@ function Shoppingcart() {
       <Header />
       <div className="shopping-cart-main">
         <div className="container">
-          <div className="shopping-cart-contents">
-            <div className="cart-items">
+          <div className="shopping-cart-contents row">
+            <div className="col-12 col-lg-8">
               <h4 className='shopping-cart'>Shopping Cart</h4>
               <div className="added-items">
                 <div className="added-item-1">
-                  <div className="added-item-img">
-                    <img src={peach}></img>
-                  </div>
-                  <div className="product-right-cart"style={{width:"80%"}}>
-                    <div className="product-right-contents">
-                      <div className="heading">PEACH</div>
-                      <div className="delivery-detail">
-                        <h4>Devilery By Sat May 24 l <span className='free'>Free</span></h4>
-                        <h5>$ 30</h5>
+                  <div className="row">
+                    <div className="col-12 col-md-4">
+                      <img src={peach}></img>
+                    </div>
+                    <div className="col-12 col-md-8">
+                      <div className="product-right-contents">
+                        <div className="heading">PEACH</div>
+                        <div className="delivery-detail">
+                          <h4>Devilery By Sat May 24 l <span className='free'>Free</span></h4>
+                          <h5>$ 30</h5>
+                        </div>
                       </div>
-                    </div>
-                    <div className="rupee">
-                      <h5 style={{ color: "#000" }}>529 </h5>
-                    </div>
-                    <div className="product-code">
-                      <h5>Product code : <span>HABDU124</span></h5>
-                    </div>
-                    <div className="stock-details">
-                      <h5>Availability : <span>IN STOCK</span></h5>
-                    </div>
-                    <div className="cart-buttons">
-                      <button className='later'>SAVE FOR LATER</button>
-                      <button>REMOVE</button>
+                      <div className="rupee">
+                        <h5 style={{ color: "#000" }}>529 </h5>
+                      </div>
+                      <div className="product-code">
+                        <h5>Product code : <span>HABDU124</span></h5>
+                      </div>
+                      <div className="stock-details">
+                        <h5>Availability : <span>IN STOCK</span></h5>
+                      </div>
+                      <div className="cart-buttons">
+                        <button className='later'>SAVE FOR LATER</button>
+                        <button>REMOVE</button>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="added-item-1">
-                  <div className="added-item-img">
-                    <img src={listing8}></img>
-                  </div>
-                  <div className="product-right-cart" style={{width:"80%"}}>
-                    <div className="product-right-contents">
-                      <div className="heading">ORANGE</div>
-                      <div className="delivery-detail">
-                        <h4>Devilery By Sat May 24 l <span className='free'>Free</span></h4>
-                        <h5>$ 30</h5>
+                  <div className="row">
+                    <div className="col-12 col-md-4">
+                      <img src={listing8}></img>
+                    </div>
+                    <div className="col-12 col-md-8">
+                      <div className="product-right-contents">
+                        <div className="heading">ORANGE</div>
+                        <div className="delivery-detail">
+                          <h4>Devilery By Sat May 24 l <span className='free'>Free</span></h4>
+                          <h5>$ 30</h5>
+                        </div>
                       </div>
-                    </div>
-                    <div className="rupee">
-                      <h5 style={{ color: "#000" }}>120 </h5>
-                    </div>
-                    <div className="product-code">
-                      <h5>Product code : <span>HABDU124</span></h5>
-                    </div>
-                    <div className="stock-details">
-                      <h5>Availability : <span>IN STOCK</span></h5>
-                    </div>
-                    <div className="cart-buttons">
-                      <button className='later'>SAVE FOR LATER</button>
-                      <button>REMOVE</button>
+                      <div className="rupee">
+                        <h5 style={{ color: "#000" }}>120 </h5>
+                      </div>
+                      <div className="product-code">
+                        <h5>Product code : <span>HABDU124</span></h5>
+                      </div>
+                      <div className="stock-details">
+                        <h5>Availability : <span>IN STOCK</span></h5>
+                      </div>
+                      <div className="cart-buttons">
+                        <button className='later'>SAVE FOR LATER</button>
+                        <button>REMOVE</button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="order-price">
+            <div className="col-12 col-lg-4">
               <div className="price-details">
                 <h4 className='shopping-cartt'>PRICE DETAILS</h4>
                 <div className="pricedetails">
@@ -110,8 +114,14 @@ function Shoppingcart() {
                       <div className='totalamount' style={{ fontWeight: "bold" }}>669</div>
                     </div>
                   </div>
-                  <button className='placeorder'>PLACE ORDER</button>
-                  <button className='Shopping'>Continue Shopping</button>
+                  <div className="row">
+                    <div className="col-6" style={{ marginBottom: "0" }}>
+                      <button className='placeorder'>PLACE ORDER</button>
+                    </div>
+                    <div className="col-6" style={{ marginBottom: "0" }}>
+                      <button className='Shopping'>Continue Shopping</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
