@@ -9,6 +9,10 @@ body {
     overflow-y: scroll;
 }
 
+input {
+    font-size: 14px;
+}
+
 img {
     display: block;
     width: 100%;
@@ -920,12 +924,13 @@ input[type=radio]:focus {
     box-shadow: 0px 4px 5px -3px #4AB6FF;
     border: none;
     color: #FFF;
-    font-size: 15px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     padding: 7px 16px;
     display: flex;
+    align-items: center;
 }
 
 .category-button img {
@@ -1419,9 +1424,6 @@ a {
 
 .listing {
     margin-top: 20px;
-    display: flex;
-    width: 100%;
-    align-items: flex-start;
 }
 
 .listening-content-left {
@@ -1950,6 +1952,7 @@ a {
 .popup-button-textarea input {
     border-radius: 10px;
     background: #0370C4;
+    border: 1px solid #0370C4 !important;
     color: #FFF;
     font-size: 14px;
     font-style: normal;
@@ -2107,11 +2110,18 @@ a {
     font-weight: 600;
     line-height: normal;
     background: #0F8EEF;
+    border: 1px solid #0F8EEF;
     width: 100%;
     height: 40px;
     border: none;
     display: block;
     border-radius: 5px;
+}
+
+.placeorder:hover {
+    background: transparent;
+    border: 1px solid #0370c4;
+    color: #0370c4;
 }
 
 .Shopping {
@@ -2126,6 +2136,10 @@ a {
     width: 100%;
     height: 40px;
     border-radius: 5px;
+}
+
+.Shopping:hover {
+    background: #dbd8d8;
 }
 
 .shopping-cartt {
@@ -2664,6 +2678,13 @@ a {
     padding: 20px 25px;
     margin: 10px 20px 35px;
     border-radius: 5px;
+    border: 1px solid #0F8EEF;
+}
+
+.place-order button:hover {
+    background: transparent;
+    border: 1px solid #0F8EEF;
+    color: #0F8EEF;
 }
 
 .place-order p {
@@ -2892,20 +2913,21 @@ a {
     margin: auto;
     border-radius: 5px;
 }
-
 .edit-profile-right-content .first-name.datepicker button {
     background: transparent;
     color: #757575;
     margin: 0;
-    margin-bottom: 6px;
+    margin-bottom: -10px;
 }
 
 .edit-profile-right-content .first-name.datepicker input {
     padding: 0;
+    border-bottom: 0;
 }
 
 .edit-profile-right-content .first-name.datepicker div div div div {
     border-radius: 0 !important;
+    padding-bottom: 10px;
 }
 
 .edit-profile-right-content .first-name.datepicker>div {
@@ -3181,8 +3203,13 @@ a {
     padding: 10px 10px;
     padding: 12px 100px;
     border-radius: 5px;
+    border: 1px solid #1B85D7;
 }
-
+.add-new-address:hover{
+    background: transparent;
+    border: 1px solid #1B85D7;
+    color: #1B85D7;
+}
 .popup-main {
     text-align: center;
 }
@@ -3624,7 +3651,7 @@ a {
 
 .edit-profile-right {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 0 0 20px;
 }
 
 .css-1u23akw-MuiButtonBase-root-MuiPickersDay-root {
@@ -3741,6 +3768,7 @@ a {
     line-height: normal;
     margin: 20px 0;
     text-transform: capitalize;
+    padding: 0 10px;
 }
 
 .wallet-content-head h4 {
@@ -3750,6 +3778,7 @@ a {
     font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
+    padding: 0 10px 20px 10px
 }
 
 .wallet-content-head {
@@ -3766,4 +3795,10 @@ a {
     text-transform: capitalize;
     padding-top: 20px;
     margin-bottom: 0;
+}
+
+.popup-submit:hover {
+    background: transparent;
+    border: 1px solid #0370c4;
+    color: #0370c4;
 }

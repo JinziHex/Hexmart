@@ -50,7 +50,7 @@ function Deliveryaddress() {
                         <a href=''><span className='listing-categories'>Delivery Address</span></a>
                     </div>
                     <div className="listing-body">
-                        <div className="listing">
+                        <div className="listing" style={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
                             <div className="listening-content-left">
                                 <div className='editprofile-inner'>
                                     <div className="editprofile-heading">
@@ -92,7 +92,7 @@ function Deliveryaddress() {
                                         <Box sx={style}>
                                             <div className="popup-main">
                                                 <div className="h3">logout</div>
-                                                <p style={{fontSize:"14px"}}>Are you sure you want to logout?</p>
+                                                <p style={{ fontSize: "14px" }}>Are you sure you want to logout?</p>
                                                 <div className="popup-buttons">
                                                     <button className='cancel'>Cancel</button>
                                                     <button className='logout'>logout</button>

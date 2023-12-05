@@ -47,7 +47,7 @@ function Editprofile() {
                         <a href=''><span className='listing-categories'>My Account</span></a>
                     </div>
                     <div className="listing-body">
-                        <div className="listing">
+                        <div className="listing" style={{display:"flex",width:"100%",justifyContent:"space-between"}}>
                             <div className="listening-content-left">
                                 <div className='editprofile-inner active'>
                                     <div className="editprofile-heading">
@@ -173,7 +173,7 @@ function Editprofile() {
                                             </div>
                                             <div className="adress-details">
                                                 <div className="country">
-                                                    <select>
+                                                    <select style={{marginBottom:"0"}}>
                                                         <option value="">District</option>
                                                         <option value="">Malapuram</option>
                                                         <option value="">Kozhikode</option>

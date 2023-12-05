@@ -53,7 +53,7 @@ function Listing() {
                     </div>
 
                     <div className="listing-body">
-                        <div className="listing">
+                        <div className="listing" style={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
                             <div className="listening-content-left">
                                 <div className='listening-content-inner'>
                                     <div className="heading">
@@ -137,9 +137,11 @@ function Listing() {
                                 </div>
                             </div>
                             <div className="listening-content-right">
-                                <div className="trending-products-list">
+                                <div className="trending-products-list" style={{ position: "relative" }}>
                                     <div class="trending-offer">40 %</div>
-                                    <div class="favorites"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                    <div class="favorites">
+                                        <i class="fa-regular fa-heart" style={{ fontSize: "18px" }} aria-hidden="true"></i>
+                                    </div>
                                     <a><img src={listing1}></img></a>
                                     <div className="trending-contents">
                                         <div className="price">
@@ -160,9 +162,11 @@ function Listing() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="trending-products-list">
+                                <div className="trending-products-list" style={{ position: "relative" }}>
                                     <div class="trending-offer">10 %</div>
-                                    <div class="favorites"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                    <div class="favorites">
+                                        <i class="fa-regular fa-heart" style={{ fontSize: "18px" }} aria-hidden="true"></i>
+                                    </div>
                                     <a><img src={listing2}></img></a>
                                     <div className="trending-contents">
                                         <div className="price">
@@ -186,8 +190,10 @@ function Listing() {
                                     </div>
                                 </div>
 
-                                <div className="trending-products-list">
-                                    <div class="favorites"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                <div className="trending-products-list" style={{ position: "relative" }}>
+                                    <div class="favorites">
+                                        <i class="fa-regular fa-heart" style={{ fontSize: "18px" }} aria-hidden="true"></i>
+                                    </div>
                                     <a><img src={listing3}></img></a>
                                     <div className="trending-contents">
                                         <div className="price">
@@ -207,7 +213,7 @@ function Listing() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="trending-products-list">
+                                <div className="trending-products-list" style={{ position: "relative" }}>
                                     <div class="trending-offer">52 %</div>
                                     <div class="favorites"><i class="fa fa-heart" aria-hidden="true" style={{ color: "red" }}></i></div>
                                     <a><img src={listing4}></img></a>
@@ -232,8 +238,10 @@ function Listing() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="trending-products-list">
-                                    <div class="favorites"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                <div className="trending-products-list" style={{ position: "relative" }}>
+                                    <div class="favorites">
+                                        <i class="fa-regular fa-heart" style={{ fontSize: "18px" }} aria-hidden="true"></i>
+                                    </div>
                                     <a><img src={listing5}></img></a>
                                     <div className="trending-contents">
                                         <div className="price">
@@ -253,7 +261,7 @@ function Listing() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="trending-products-list">
+                                <div className="trending-products-list" style={{ position: "relative" }}>
                                     <div class="favorites"><i class="fa fa-heart" aria-hidden="true" style={{ color: "red" }}></i></div>
                                     <a><img src={listing6}></img></a>
                                     <div className="trending-contents">
@@ -275,9 +283,11 @@ function Listing() {
                                     </div>
                                 </div>
 
-                                <div className="trending-products-list">
+                                <div className="trending-products-list" style={{ position: "relative" }}>
                                     <div class="trending-offer">30 %</div>
-                                    <div class="favorites"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                    <div class="favorites">
+                                        <i class="fa-regular fa-heart" style={{ fontSize: "18px" }} aria-hidden="true"></i>
+                                    </div>
                                     <a><img src={listing7}></img></a>
                                     <div className="trending-contents">
                                         <div className="price">
@@ -298,7 +308,7 @@ function Listing() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="trending-products-list">
+                                <div className="trending-products-list" style={{ position: "relative" }}>
                                     <div class="favorites"><i class="fa fa-heart" aria-hidden="true" style={{ color: "red" }}></i></div>
                                     <a><img src={listing8}></img></a>
                                     <div className="trending-contents">
@@ -319,8 +329,10 @@ function Listing() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="trending-products-list">
-                                    <div class="favorites"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                <div className="trending-products-list" style={{ position: "relative" }}>
+                                    <div class="favorites">
+                                        <i class="fa-regular fa-heart" style={{ fontSize: "18px" }} aria-hidden="true"></i>
+                                    </div>
                                     <a><img src={listing9}></img></a>
                                     <div className="trending-contents">
                                         <div className="price">
@@ -340,7 +352,7 @@ function Listing() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="trending-products-list">
+                                <div className="trending-products-list" style={{ position: "relative" }}>
                                     <div class="trending-offer">20 %</div>
                                     <div class="favorites"><i class="fa fa-heart" aria-hidden="true" style={{ color: "red" }}></i></div>
                                     <a><img src={listing10}></img></a>
@@ -362,8 +374,10 @@ function Listing() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="trending-products-list">
-                                    <div class="favorites"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                <div className="trending-products-list" style={{ position: "relative" }}>
+                                    <div class="favorites">
+                                        <i class="fa-regular fa-heart" style={{ fontSize: "18px" }} aria-hidden="true"></i>
+                                    </div>
                                     <a><img src={listing11}></img></a>
                                     <div className="trending-contents">
                                         <div className="price">
@@ -385,8 +399,10 @@ function Listing() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="trending-products-list">
-                                    <div class="favorites"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                <div className="trending-products-list" style={{ position: "relative" }}>
+                                    <div class="favorites">
+                                        <i class="fa-regular fa-heart" style={{ fontSize: "18px" }} aria-hidden="true"></i>
+                                    </div>
                                     <a><img src={listing12}></img></a>
                                     <div className="trending-contents">
                                         <div className="price">
