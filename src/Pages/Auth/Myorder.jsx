@@ -56,7 +56,7 @@ function Myorder() {
                         <a href=''><span className='listing-categories'>My order</span></a>
                     </div>
                     <div className="listing-body">
-                        <div className="listing">
+                        <div className="listing" style={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
                             <div className="listening-content-left">
                                 <div className='editprofile-inner'>
                                     <div className="editprofile-heading">

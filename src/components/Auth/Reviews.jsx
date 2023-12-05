@@ -96,7 +96,7 @@ function Reviews() {
             <h4>Comments</h4>
             <textarea rows="4" className="textarea" cols="100" name="comment" form="usrform" value=""></textarea>
             <div className="popup-button-textarea">
-              <input type='submit'></input>
+              <input className='popup-submit' type='submit'></input>
             </div>
             <div class="user-description-button">
             </div>
