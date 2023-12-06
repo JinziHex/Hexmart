@@ -17,6 +17,8 @@ import listing1 from '../../Asset/images/listing-1.png'
 import listing2 from '../../Asset/images/listing-2.png'
 import listing3 from '../../Asset/images/listing-3.png'
 import listing4 from '../../Asset/images/listing-4.png'
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 import listing5 from '../../Asset/images/listing-5.png'
 function Productdescription() {
     const [value, setValue] = React.useState(4);
@@ -211,9 +213,11 @@ function Productdescription() {
                 </div>
                 <div className="container">
                     <div className="pagination">
-                        <span className='active'>1</span>
-                        <span className='inactive'>2</span>
-                        <span className='inactive'><FontAwesomeIcon icon={faArrowRight} style={{ color: "#665D5D", }} /></span>
+                    <div className="pagination">
+                            <Stack spacing={2}>
+                                <Pagination count={5} color="secondary" />
+                            </Stack>
+                        </div>
                     </div>
                 </div>
             </div>

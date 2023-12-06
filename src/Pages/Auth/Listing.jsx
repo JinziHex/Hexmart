@@ -24,6 +24,8 @@ import bestsellerimgtwo from '../../Asset/images/bestseller-img-two.png'
 import bestsellerimgthree from '../../Asset/images/bestseller-img-three.png'
 import bestsellerimgfour from '../../Asset/images/bestseller-img-four.png'
 import { useState } from 'react'
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
 
 function Listing() {
@@ -427,9 +429,9 @@ function Listing() {
                             </div>
                         </div>
                         <div className="pagination">
-                            <span className='active'>1</span>
-                            <span className='inactive'>2</span>
-                            <span className='inactive'><FontAwesomeIcon icon={faArrowRight} style={{ color: "#665D5D", }} /></span>
+                            <Stack spacing={2}>
+                                <Pagination count={5} color="secondary" />
+                            </Stack>
                         </div>
                     </div>
                 </div>
@@ -544,9 +546,9 @@ function Listing() {
                     </div>
                     <div className="container">
                         <div className="pagination">
-                            <span className='active'>1</span>
-                            <span className='inactive'>2</span>
-                            <span className='inactive'><FontAwesomeIcon icon={faArrowRight} style={{ color: "#665D5D", }} /></span>
+                        <Stack spacing={2}>
+                                <Pagination count={5} color="secondary" />
+                            </Stack>
                         </div>
                     </div>
                 </div>
