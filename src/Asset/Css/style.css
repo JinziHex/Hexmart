@@ -1791,11 +1791,11 @@ a {
 }
 
 .review-inner .customer-rating {
-    width: 35%;
+    width: 40%;
 }
 
 .review-inner .customer-review {
-    width: 65%;
+    width: 60%;
 }
 
 .review-inner .customer-rating h4 {
@@ -1904,7 +1904,7 @@ a {
     padding: 30px;
     outline: 0;
     margin-bottom: 10px;
-    width: 75%;
+    width: 85%;
 
 }
 
