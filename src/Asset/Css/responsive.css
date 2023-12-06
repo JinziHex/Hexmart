@@ -292,6 +292,9 @@
     .advantage .inner-h4 h4 {
         font-size: 16px;
     }
+    .myorder-main .dropdown-menu {
+        transform: translate(608px, 0px) !important;
+    }
 }
 
 @media (max-width: 991px) {
@@ -436,6 +439,7 @@
 
     .add-new-address {
         margin: 20px 0 20px !important;
+        margin: auto!important;
     }
 
     .track-order {
@@ -482,7 +486,21 @@
     .listing {
         display: block !important;
     }
-    
+    .add-new-address:hover {
+        margin: 10px auto!important;
+    }
+    .myorder-main .dropdown-menu {
+        transform: translate(649px, 0px) !important;
+    }
+    .popup-main .h3 {
+        font-size: 20px;
+    }
+    .popup-buttons .cancel {
+        font-size: 16px;
+    }
+    .popup-buttons .logout {
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 814px) {
@@ -493,9 +511,12 @@
 
 @media (max-width: 767px) {
     .add-new-address {
-        font-size: 13px;
+        font-size: 12px;
     }
-
+    .myorder-main .order {
+        position: absolute;
+        right: 0;
+    } 
     .wallet-transaction {
         color: #000;
         font-size: 18px;
@@ -818,6 +839,9 @@
 
     .delivery-address-name .dropdown-menu {
         transform: translate(20px, 17px) !important;
+    }
+    .myorder-main .dropdown-menu {
+        transform: translate(0, 0px) !important;
     }
 
 }
